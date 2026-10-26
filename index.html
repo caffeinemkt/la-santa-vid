@@ -104,6 +104,34 @@
        HEADER & GLOBAL NAVIGATION
        ======================================================================== -->
   <header id="main-header" class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md transition-all duration-300 border-b border-primary-container/10">
+    <!-- Temporal Promotional Banner: Day Pass $1,500 MXN Lago Ski RIXEN -->
+    <div id="daypass-top-banner" class="bg-gradient-to-r from-[#230613] via-primary-container to-[#230613] text-cantera-sand border-b border-gold-burnished/50 relative overflow-hidden">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(226,200,122,0.16),transparent_70%)] pointer-events-none"></div>
+      <div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter py-2 flex flex-wrap items-center justify-between gap-3 relative z-10">
+        <div class="flex items-center gap-2.5 flex-wrap">
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 bg-gold-burnished text-cabernet-deep font-label-sm text-[9px] uppercase tracking-[0.22em] font-bold">
+            <span class="w-1.5 h-1.5 rounded-circle-exception bg-cabernet-deep animate-ping"></span>
+            <span>Edición Temporal</span>
+          </span>
+          <p class="font-body-sm text-xs sm:text-[13px] text-cantera-sand tracking-wide">
+            ¡Ya puedes agendar tu <strong class="text-gold-light font-semibold">Day Pass por $1,500 MXN</strong> y probar el <strong class="text-gold-light font-semibold">Lago Cable Ski de RIXEN®</strong>!
+          </p>
+        </div>
+        <div class="flex items-center gap-3 ml-auto">
+          <a href="https://wa.me/525535352057?text=Hola%2C%20quiero%20agendar%20mi%20Day%20Pass%20de%20%241%2C500%20MXN%20para%20probar%20el%20Lago%20Ski%20de%20Rixen%20en%20La%20Santa%20Vid." target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 px-3.5 py-1 bg-gold-burnished hover:bg-gold-light text-cabernet-deep font-label-sm text-[9px] uppercase tracking-[0.2em] font-bold transition-all shadow-sm">
+            <span>Agendar Day Pass</span>
+            <span class="material-symbols-outlined text-[13px]">arrow_outward</span>
+          </a>
+          <a href="#day-pass-rixen" class="hidden sm:inline-flex items-center gap-1 font-label-sm text-[9px] uppercase tracking-[0.18em] text-gold-light hover:underline">
+            <span>Ver Detalles</span>
+          </a>
+          <button type="button" onclick="const b=document.getElementById('daypass-top-banner');if(b)b.classList.add('hidden');const m=document.getElementById('main-content');if(m)m.style.paddingTop='116px';" class="text-cantera-sand/60 hover:text-gold-light p-1 transition-colors" aria-label="Cerrar aviso temporal" title="Cerrar aviso">
+            <span class="material-symbols-outlined text-sm">close</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
     <!-- Top Institutional Concierge Strip -->
     <div class="bg-cabernet-deep text-cantera-sand border-b border-gold-burnished/30">
       <div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter h-9 flex items-center justify-between font-label-sm text-[10px] tracking-[0.2em] uppercase">
@@ -173,7 +201,7 @@
     </div>
   </header>
 
-  <main class="w-full pt-[116px]">
+  <main id="main-content" class="w-full pt-[152px] transition-all duration-300">
 
     <!-- ======================================================================
          1. HERO SECTION: CINEMATIC VIDEO & ENOLOGY GRANDEUR
@@ -334,12 +362,74 @@
         <span>• 1ER CABLE SKI RIXEN DEL BAJÍO</span>
         <span>• CLUB ECUESTRE CON 100 CABALLERIZAS &amp; POLO ARENA</span>
         <span>• DESARROLLADO POR INOBA DESARROLLOS &amp; KELLER WILLIAMS MÉXICO</span>
+        <span>• NUEVO: DAY PASS $1,500 MXN • VIVE EL LAGO CABLE SKI RIXEN®</span>
         <span>• LA PRIMERA RESERVA RESIDENCIAL FULLNESS DE MÉXICO</span>
         <span>• MEDALLA DE ORO CONCOURS MONDIAL DE BRUXELLES 2024</span>
         <span>• BACCHUS DE ORO OIV 2026</span>
         <span>• ARQUITECTURA DE AUTOR POR ARTIGAS ARQUITECTOS</span>
       </div>
     </div>
+
+    <!-- ======================================================================
+         TEMPORAL PROMO BANNER: DAY PASS $1,500 MXN • LAGO SKI RIXEN®
+         ====================================================================== -->
+    <section id="day-pass-rixen" class="bg-cantera-cream border-b border-gold-burnished/30 py-8 lg:py-10 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter">
+        <div class="bg-cabernet-deep text-cantera-sand hairline-dark cellar-shadow relative overflow-hidden grid grid-cols-1 lg:grid-cols-12">
+          <!-- Background Visual Accent on Left -->
+          <div class="lg:col-span-5 relative min-h-[240px] lg:min-h-full overflow-hidden group">
+            <img src="https://assets.cdn.filesafe.space/ZZleTToDW7ldi8Rlm96v/media/69b1f9828cb2597a554d361c.jpg" alt="Lago Cable Ski RIXEN La Santa Vid Day Pass" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-black/75 via-black/35 to-cabernet-deep"></div>
+            <div class="absolute top-4 left-4 inline-flex items-center gap-2 px-3 py-1.5 bg-gold-burnished text-cabernet-deep font-label-sm text-[9px] uppercase tracking-[0.22em] font-bold shadow-lg">
+              <span class="w-1.5 h-1.5 rounded-circle-exception bg-cabernet-deep animate-ping"></span>
+              <span>Promoción Temporal • Cupo Limitado</span>
+            </div>
+            <div class="absolute bottom-4 left-4 right-4 flex items-center gap-2 text-cantera-sand/90 font-label-sm text-[10px] uppercase tracking-[0.2em]">
+              <span class="material-symbols-outlined text-gold-light text-base">surfing</span>
+              <span>1er Lago Cable Ski RIXEN® del Bajío</span>
+            </div>
+          </div>
+
+          <!-- Content & Ticket CTA on Right -->
+          <div class="lg:col-span-7 p-6 sm:p-8 lg:p-10 flex flex-col xl:flex-row items-start xl:items-center justify-between gap-6 relative z-10">
+            <div class="space-y-2.5 max-w-xl">
+              <div class="inline-flex items-center gap-2 text-gold-light font-label-sm text-[10px] uppercase tracking-[0.26em] font-semibold">
+                <span class="material-symbols-outlined text-sm">verified</span>
+                <span>Experiencia Abierta por Tiempo Limitado</span>
+              </div>
+              <h2 class="font-serif text-2xl sm:text-3xl lg:text-4xl text-cantera-sand leading-tight">
+                Agenda tu <span class="italic text-gold-light font-light">Day Pass</span> y prueba el Lago Ski de RIXEN®
+              </h2>
+              <p class="font-body-sm text-xs sm:text-sm text-cantera-sand/80 leading-relaxed">
+                Vive un día inolvidable en <strong>La Santa Vid</strong>: pon a prueba la adrenalina del primer <strong>Lago Cable Ski con tecnología alemana RIXEN®</strong> en la región, disfruta del club de playa campestre y recorre nuestros viñedos en San Miguel de Allende.
+              </p>
+              <div class="pt-1 flex flex-wrap items-center gap-4 text-[11px] font-label-sm uppercase tracking-widest text-gold-light/90">
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">check_circle</span> Acceso Lago Ski RIXEN®</span>
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">check_circle</span> Club de Playa &amp; Viñedos</span>
+                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">check_circle</span> Previa Reservación</span>
+              </div>
+            </div>
+
+            <!-- VIP Ticket Price Box -->
+            <div class="w-full xl:w-auto shrink-0 bg-black/35 backdrop-blur-md p-5 hairline-dark flex flex-col items-center text-center xl:min-w-[230px]">
+              <span class="font-label-sm text-[9px] uppercase tracking-[0.25em] text-cantera-sand/70">Tarifa Especial Day Pass</span>
+              <div class="my-1.5 flex items-baseline gap-1">
+                <span class="font-serif text-4xl text-gold-light font-semibold">$1,500</span>
+                <span class="font-label-sm text-[10px] uppercase tracking-widest text-gold-light">MXN</span>
+              </div>
+              <span class="font-body-sm text-[11px] text-cantera-sand/65 mb-4">Por persona • Sujeto a disponibilidad</span>
+              <a href="https://wa.me/525535352057?text=Hola%2C%20quiero%20agendar%20mi%20Day%20Pass%20de%20%241%2C500%20MXN%20para%20probar%20el%20Lago%20Ski%20de%20Rixen%20en%20La%20Santa%20Vid." target="_blank" rel="noopener" data-cursor="RESERVAR PASS" class="w-full py-3 px-5 bg-gold-burnished hover:bg-gold-light text-cabernet-deep font-label-sm text-[10px] uppercase tracking-[0.2em] font-bold transition-all flex items-center justify-center gap-2 shadow-lg">
+                <span>Agendar Day Pass</span>
+                <span class="material-symbols-outlined text-sm">chat</span>
+              </a>
+              <button type="button" onclick="const sel=document.getElementById('vip-interest');if(sel){sel.value='Day Pass Lago Ski RIXEN ($1,500 MXN)';}document.getElementById('contacto-vip').scrollIntoView({behavior:'smooth'});" class="mt-2.5 font-label-sm text-[9px] uppercase tracking-[0.18em] text-gold-light/85 hover:text-gold-light underline">
+                O reservar vía formulario VIP
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ======================================================================
          2. SECTION: ¿QUÉ ES FULLNESS? (INTERACTIVE 4 PILLARS EXPERIENCE)
@@ -1096,11 +1186,18 @@
             <img src="https://assets.cdn.filesafe.space/ZZleTToDW7ldi8Rlm96v/media/69b1f9828cb2597a554d361c.jpg" alt="Lago Cable Ski Rixen San Miguel de Allende" class="absolute inset-0 w-full h-full object-cover arch-card-img" />
             <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
             <div class="relative z-10">
-              <span class="px-2.5 py-1 bg-gold-burnished text-cabernet-deep font-label-sm text-[9px] uppercase tracking-widest font-bold">Deporte Acuático Activo</span>
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="px-2.5 py-1 bg-gold-burnished text-cabernet-deep font-label-sm text-[9px] uppercase tracking-widest font-bold">Deporte Acuático Activo</span>
+                <span class="px-2.5 py-1 bg-primary-container text-gold-light hairline-dark font-label-sm text-[9px] uppercase tracking-widest font-bold">Day Pass Disponible • $1,500 MXN</span>
+              </div>
               <h3 class="font-serif text-2xl lg:text-3xl text-cantera-sand mt-2">1er Lago Cable Ski RIXEN® del Bajío</h3>
               <p class="font-body-sm text-xs text-cantera-sand/80 mt-2 leading-relaxed">
                 Operado con tecnología alemana Rixen Cableway de clase mundial. Espejo de agua sustentable para wakeboard, esquí acuático, kayak y club de playa campestre.
               </p>
+              <a href="https://wa.me/525535352057?text=Hola%2C%20quiero%20agendar%20mi%20Day%20Pass%20de%20%241%2C500%20MXN%20para%20probar%20el%20Lago%20Ski%20de%20Rixen%20en%20La%20Santa%20Vid." target="_blank" rel="noopener" class="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-gold-burnished hover:bg-gold-light text-cabernet-deep font-label-sm text-[9px] uppercase tracking-[0.2em] font-bold transition-all">
+                <span>Agendar Day Pass ($1,500 MXN)</span>
+                <span class="material-symbols-outlined text-xs">arrow_outward</span>
+              </a>
             </div>
           </div>
 
@@ -1650,6 +1747,7 @@
                 <label for="vip-interest" class="font-label-sm text-[10px] uppercase tracking-[0.2em] text-primary font-bold block mb-2">Opción de Inversión de Interés *</label>
                 <select id="vip-interest" required class="w-full bg-surface-container-low border-b border-primary/30 focus:border-gold-burnished px-3.5 py-3 font-body-sm text-sm text-on-surface focus:outline-none transition-colors">
                   <option value="Lotes Residenciales ($400 USD/m² • 120 botellas/año)">Lotes Residenciales entre Viñedos ($400 USD/m² • 120 botellas/año)</option>
+                  <option value="Day Pass Lago Ski RIXEN ($1,500 MXN)">Day Pass Experiencia Lago Ski RIXEN® ($1,500 MXN)</option>
                   <option value="Residencias de Autor Artigas (Desde $9.3 MDP)">Residencias de Autor Artigas Arquitectos (Desde $9.3 MDP)</option>
                   <option value="Modelo Fractional 1/8 (Desde $2.95 MDP)">Modelo Fractional 1/8 Casa Inspiración / Plenitud (Desde $2.95 MDP)</option>
                   <option value="Programa Wyndham Branded Residences (80% Renta)">Programa Wyndham® Branded Residences (80% Renta)</option>
