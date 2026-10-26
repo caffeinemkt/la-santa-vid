@@ -1,0 +1,1906 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>La Santa Vid — Reserva Residencial Fullness &amp; Viñedos | San Miguel de Allende</title>
+  <meta name="description" content="La primera Reserva Residencial Fullness de México en San Miguel de Allende. 105 hectáreas, 9 reservas privadas, 11 viñedos productivos, 120 botellas anuales incluidas de por vida, Residencias de Autor Artigas Arquitectos, Modelo Fractional y más de 30 amenidades." />
+
+  <!-- Google Fonts: Playfair Display, Plus Jakarta Sans, Montserrat & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+
+  <!-- Tailwind CSS & Design System Tokens (San Miguel Reserve & Vineyard) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#fff8f8",
+            "surface-dim": "#e2d7d8",
+            "surface-bright": "#fff8f8",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#fcf1f2",
+            "surface-container": "#f7ebec",
+            "surface-container-high": "#f1e5e6",
+            "surface-container-highest": "#ebe0e1",
+            "on-surface": "#1f1a1b",
+            "on-surface-variant": "#524347",
+            "outline": "#857277",
+            "outline-variant": "#d7c1c6",
+            "primary": "#330019",
+            "on-primary": "#ffffff",
+            "primary-container": "#50112e",
+            "cabernet-deep": "#3A0A20",
+            "secondary": "#755b00",
+            "gold-light": "#E2C87A",
+            "gold-antique": "#C9A84C",
+            "gold-burnished": "#A38230",
+            "terracotta": "#D7A174",
+            "cantera-sand": "#F9F6F0",
+            "cantera-cream": "#F2EBE1",
+            "adobe-stone": "#E4DCD3",
+            "slate-charcoal": "#231B1E",
+            "smoked-noir": "#1A1516"
+          },
+          fontFamily: {
+            "display-xl": ["Playfair Display", "serif"],
+            "display-lg": ["Playfair Display", "serif"],
+            "headline-lg": ["Playfair Display", "serif"],
+            "headline-md": ["Playfair Display", "serif"],
+            "headline-sm": ["Playfair Display", "serif"],
+            "serif": ["Playfair Display", "serif"],
+            "body-lg": ["Plus Jakarta Sans", "sans-serif"],
+            "body-md": ["Plus Jakarta Sans", "sans-serif"],
+            "body-sm": ["Plus Jakarta Sans", "sans-serif"],
+            "label-lg": ["Montserrat", "sans-serif"],
+            "label-md": ["Montserrat", "sans-serif"],
+            "label-sm": ["Montserrat", "sans-serif"]
+          },
+          spacing: {
+            "gutter": "2rem",
+            "gutter-mobile": "1.25rem",
+            "space-xl": "3.5rem",
+            "space-lg": "2rem",
+            "space-md": "1rem",
+            "space-sm": "0.5rem"
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-cantera-sand pb-16 lg:pb-0">
+
+  <!-- CINEMATIC PRELOADER -->
+  <div id="preloader">
+    <div class="flex flex-col items-center text-center px-6">
+      <img src="https://assets.cdn.filesafe.space/ZZleTToDW7ldi8Rlm96v/media/b2c5040c-1bd2-4176-9369-ddbfdd56bc5a.png" alt="La Santa Vid" class="h-16 w-auto object-contain mb-6 opacity-95" />
+      <span class="font-label-sm text-[10px] uppercase tracking-[0.35em] text-gold-light mb-2">San Miguel de Allende • Guanajuato</span>
+      <h2 class="font-serif italic text-2xl md:text-3xl text-cantera-sand font-light mb-8">La Primera Reserva Residencial Fullness de México</h2>
+      <div class="preloader-line mb-3">
+        <div id="preloader-bar" class="preloader-bar"></div>
+      </div>
+      <span id="preloader-pct" class="font-label-sm text-[11px] tracking-[0.28em] text-gold-light">00%</span>
+    </div>
+  </div>
+
+  <!-- CUSTOM MAGNETIC CURSOR -->
+  <div id="cursor-dot" class="custom-cursor-dot"></div>
+  <div id="cursor-ring" class="custom-cursor-ring"><span id="cursor-label">EXPLORAR</span></div>
+
+  <!-- TOP SCROLL PROGRESS BAR -->
+  <div class="fixed top-0 left-0 w-full h-[2px] z-[70] bg-transparent pointer-events-none">
+    <div id="scroll-progress-bar" class="h-full bg-gradient-to-r from-gold-burnished via-gold-light to-gold-burnished w-0 transition-all duration-75"></div>
+  </div>
+
+  <!-- ========================================================================
+       HEADER & GLOBAL NAVIGATION
+       ======================================================================== -->
+  <header id="main-header" class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md transition-all duration-300 border-b border-primary-container/10">
+    <!-- Top Institutional Concierge Strip -->
+    <div class="bg-cabernet-deep text-cantera-sand border-b border-gold-burnished/30">
+      <div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter h-9 flex items-center justify-between font-label-sm text-[10px] tracking-[0.2em] uppercase">
+        <div class="flex items-center gap-6">
+          <span class="flex items-center gap-1.5 text-cantera-sand/85">
+            <span class="material-symbols-outlined text-[13px] text-gold-light">location_on</span>
+            <span>San Miguel de Allende • Km 9.5 SMA—QRO</span>
+          </span>
+          <a href="tel:+524151159136" class="hidden md:flex items-center gap-1.5 text-cantera-sand/85 hover:text-gold-light transition-colors">
+            <span class="material-symbols-outlined text-[13px] text-gold-light">call</span>
+            <span>+52 (415) 115 9136</span>
+          </a>
+          <span class="hidden lg:flex items-center gap-1.5 text-gold-light">
+            <span class="material-symbols-outlined text-[13px]">wine_bar</span>
+            <span data-es="120 Botellas Anuales Incluidas de por Vida" data-en="120 Annual Wine Bottles Included for Life">120 Botellas Anuales Incluidas de por Vida</span>
+          </span>
+        </div>
+        <div class="flex items-center gap-5">
+          <a href="https://wa.me/525535352057?text=Hola%2C%20deseo%20informaci%C3%B3n%20exclusiva%20de%20La%20Santa%20Vid%20en%20San%20Miguel%20de%20Allende." target="_blank" rel="noopener" class="flex items-center gap-1.5 text-gold-light hover:text-cantera-sand transition-colors font-semibold">
+            <span class="material-symbols-outlined text-[13px]">chat</span>
+            <span>WhatsApp Concierge</span>
+          </a>
+          <div class="h-3 w-px bg-gold-burnished/40"></div>
+          <div class="flex items-center gap-1.5">
+            <button type="button" class="lang-btn-es text-gold-light font-bold hover:text-white transition-colors">ES</button>
+            <span class="text-cantera-sand/40">/</span>
+            <button type="button" class="lang-btn-en text-cantera-sand/60 opacity-50 hover:text-white transition-colors">EN</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Architectural Navbar -->
+    <div class="h-20 max-w-7xl mx-auto px-gutter-mobile lg:px-gutter flex items-center justify-between gap-4">
+      <a href="#inicio" class="flex items-center gap-3.5 group">
+        <div class="w-11 h-11 bg-cabernet-deep p-1.5 flex items-center justify-center hairline-dark">
+          <img src="https://assets.cdn.filesafe.space/ZZleTToDW7ldi8Rlm96v/media/b2c5040c-1bd2-4176-9369-ddbfdd56bc5a.png" alt="La Santa Vid" class="w-full h-full object-contain" />
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif text-xl font-semibold tracking-tight text-cabernet-deep group-hover:text-primary-container transition-colors leading-none">LA SANTA VID</span>
+          <span class="font-label-sm text-[9px] tracking-[0.26em] text-gold-burnished uppercase mt-1">Reserva &amp; Viñedos • SMA</span>
+        </div>
+      </a>
+
+      <nav class="hidden xl:flex items-center gap-6 font-label-md text-[11px] font-medium uppercase tracking-[0.16em]">
+        <a href="#fullness" class="text-on-surface-variant hover:text-primary-container transition-colors py-2" data-es="Filosofía Fullness" data-en="Fullness Philosophy">Filosofía Fullness</a>
+        <a href="#enologia" class="text-on-surface-variant hover:text-primary-container transition-colors py-2" data-es="Viñedos &amp; Vino" data-en="Vineyards &amp; Wine">Viñedos &amp; Vino</a>
+        <a href="#cinema" class="text-on-surface-variant hover:text-primary-container transition-colors py-2" data-es="Cinema &amp; Videos" data-en="Cinema &amp; Videos">Cinema &amp; Videos</a>
+        <a href="#residencias" class="text-on-surface-variant hover:text-primary-container transition-colors py-2" data-es="Casas Artigas" data-en="Artigas Homes">Casas Artigas</a>
+        <a href="#inversion" class="text-on-surface-variant hover:text-primary-container transition-colors py-2" data-es="Simulador &amp; Fractional" data-en="Simulator &amp; Fractional">Simulador &amp; Fractional</a>
+        <a href="#lifestyle" class="text-on-surface-variant hover:text-primary-container transition-colors py-2" data-es="Lifestyle &amp; Wyndham" data-en="Lifestyle &amp; Wyndham">Lifestyle &amp; Wyndham</a>
+        <a href="#masterplan" class="text-primary-container font-bold border-b-2 border-gold-burnished py-2" data-es="Masterplan En Vivo" data-en="Live Masterplan">Masterplan En Vivo</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <button type="button" onclick="window.openVideoModal('youtube', '6as0NMsiI94', 'La Vida Como Debe Ser — Manifiesto Oficial La Santa Vid')" class="hidden md:inline-flex items-center gap-2 px-4 py-3 hairline-light text-primary hover:bg-cantera-cream transition-all font-label-sm text-[10px] uppercase tracking-[0.18em] font-semibold" title="Ver Film Oficial">
+          <span class="material-symbols-outlined text-base text-gold-burnished">play_circle</span>
+          <span data-es="Film Oficial" data-en="Official Film">Film Oficial</span>
+        </button>
+        <a href="#contacto-vip" class="hidden sm:inline-flex items-center justify-center bg-primary-container text-cantera-sand font-label-lg text-[11px] px-6 py-3.5 tracking-[0.18em] uppercase font-semibold hover:bg-cabernet-deep border border-transparent hover:border-gold-antique transition-all duration-300 shadow-[0_4px_20px_rgba(80,17,46,0.22)]" data-es="Agendar Visita Privada" data-en="Book Private Tour">
+          Agendar Visita Privada
+        </a>
+        <button type="button" onclick="document.getElementById('mobile-drawer').classList.remove('hidden')" class="xl:hidden p-2.5 text-cabernet-deep hover:text-gold-burnished transition-colors" aria-label="Abrir menú">
+          <span class="material-symbols-outlined text-2xl">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="w-full pt-[116px]">
+
+    <!-- ======================================================================
+         1. HERO SECTION: CINEMATIC VIDEO & ENOLOGY GRANDEUR
+         ====================================================================== -->
+    <section id="inicio" class="relative w-full min-h-[90vh] flex flex-col justify-between overflow-hidden bg-cabernet-deep text-cantera-sand">
+      <!-- Fallback Render Image -->
+      <img id="hero-fallback-img" src="assets/promo-invierte-en-tu-legado.jpg" alt="La Santa Vid San Miguel de Allende" class="hero-video-bg opacity-45" />
+
+      <!-- Live Official High-Resolution MP4 Video Background -->
+      <video id="hero-video" class="hero-video-bg opacity-55" autoplay muted loop playsinline poster="assets/promo-invierte-en-tu-legado.jpg">
+        <source src="https://assets.cdn.filesafe.space/ZZleTToDW7ldi8Rlm96v/media/6acfc23a1ea74c571f3e88e9.mp4" type="video/mp4" />
+      </video>
+
+      <!-- Multi-layered Cellar & Sunlit Gradients -->
+      <div class="absolute inset-0 bg-gradient-to-t from-cabernet-deep via-cabernet-deep/65 to-cabernet-deep/35 z-0"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-cabernet-deep/90 via-cabernet-deep/45 to-transparent z-0"></div>
+
+      <div class="relative z-10 max-w-7xl mx-auto w-full px-gutter-mobile lg:px-gutter pt-12 pb-16 lg:pt-20 lg:pb-20 flex-1 flex flex-col justify-between">
+        <!-- Top Editorial Eyebrow & Scene Switcher -->
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-8">
+          <div class="inline-flex items-center gap-2.5 px-4 py-2 bg-black/35 backdrop-blur-md hairline-dark">
+            <span class="w-2 h-2 rounded-circle-exception bg-gold-light animate-pulse"></span>
+            <span class="font-label-sm text-[10px] uppercase tracking-[0.24em] text-gold-light font-semibold" data-es="La Primera Reserva Residencial Fullness de México" data-en="Mexico's First Fullness Residential &amp; Vineyard Reserve">
+              La Primera Reserva Residencial Fullness de México
+            </span>
+          </div>
+
+          <!-- Interactive Scene Switcher -->
+          <div class="flex items-center gap-1.5 bg-black/35 backdrop-blur-md p-1 hairline-dark">
+            <button type="button" class="hero-scene-btn px-3 py-1.5 bg-gold-burnished text-cabernet-deep font-label-sm text-[9px] uppercase tracking-widest font-bold transition-all">
+              01 • Viñedos (Video)
+            </button>
+            <button type="button" class="hero-scene-btn px-3 py-1.5 bg-white/10 text-cantera-sand font-label-sm text-[9px] uppercase tracking-widest font-semibold hover:bg-white/20 transition-all">
+              02 • Ecuestre (Video)
+            </button>
+            <button type="button" class="hero-scene-btn px-3 py-1.5 bg-white/10 text-cantera-sand font-label-sm text-[9px] uppercase tracking-widest font-semibold hover:bg-white/20 transition-all">
+              03 • Residencia Autor
+            </button>
+          </div>
+        </div>
+
+        <!-- Hero Main Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-end my-auto">
+          <div class="lg:col-span-8 space-y-6">
+            <div class="inline-flex items-center gap-3 text-gold-light/90 font-label-sm text-[11px] uppercase tracking-[0.28em]">
+              <span>San Miguel de Allende, Gto.</span>
+              <span>•</span>
+              <span>Desarrollado por INOBA &amp; Artigas Arquitectos</span>
+            </div>
+
+            <h1 class="font-serif text-4xl sm:text-6xl lg:text-[68px] lg:leading-[76px] text-cantera-sand font-normal tracking-tight">
+              <span data-es="Tu Vida Entre Viñedos:" data-en="Your Life Among Vineyards:">Tu Vida Entre Viñedos:</span>
+              <span class="italic font-light gold-shimmer block mt-1" data-es="Terrenos y Casas de Autor en San Miguel." data-en="Signature Homes &amp; Vineyard Lots in San Miguel.">Terrenos y Casas de Autor en San Miguel.</span>
+            </h1>
+
+            <p class="font-body-lg text-base sm:text-lg text-cantera-sand/85 max-w-2xl font-light leading-relaxed" data-es="Tu fin de semana ya tiene casa. Un santuario enológico y sustentable de 105 hectáreas con 11 viñedos productivos, 120 botellas anuales de tu propia cosecha incluidas de por vida y más de 30 experiencias de clase mundial." data-en="Your weekend now has a home. A 105-hectare sustainable enological sanctuary with 11 productive vineyards, 120 annual bottles of your own harvest included for life, and 30+ world-class amenities.">
+              Tu fin de semana ya tiene casa. Un santuario enológico y sustentable de 105 hectáreas con 11 viñedos productivos, <strong>120 botellas anuales de tu propia cosecha incluidas de por vida</strong> y más de 30 experiencias de clase mundial.
+            </p>
+
+            <!-- Hero Action Cluster -->
+            <div class="pt-3 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+              <a href="#masterplan" data-cursor="MAPA EN VIVO" class="inline-flex items-center justify-center bg-gold-burnished text-cabernet-deep font-label-lg text-xs uppercase tracking-[0.2em] px-8 py-4 font-bold hover:bg-gold-light transition-all shadow-2xl group">
+                <span data-es="Explorar Masterplan en Tiempo Real" data-en="Explore Real-Time Masterplan">Explorar Masterplan en Tiempo Real</span>
+                <span class="material-symbols-outlined ml-2 text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+              </a>
+              <a href="#residencias" data-cursor="COLECCIÓN" class="inline-flex items-center justify-center bg-white/10 hover:bg-white/20 backdrop-blur-md hairline-dark text-cantera-sand font-label-lg text-xs uppercase tracking-[0.2em] px-7 py-4 font-semibold transition-all">
+                <span data-es="Ver 8 Modelos de Residencias" data-en="View 8 Residence Models">Ver 8 Modelos de Residencias</span>
+              </a>
+              <button type="button" onclick="window.openVideoModal('youtube', '6as0NMsiI94', 'La Vida Como Debe Ser — La Santa Vid')" data-cursor="REPRODUCIR" class="inline-flex items-center justify-center gap-2.5 px-6 py-4 bg-black/40 hover:bg-black/65 hairline-dark text-gold-light font-label-sm text-[11px] uppercase tracking-[0.2em] transition-all">
+                <span class="material-symbols-outlined text-lg">play_circle</span>
+                <span>Ver Manifiesto</span>
+              </button>
+            </div>
+
+            <p id="hero-scene-caption" class="font-label-sm text-[10px] uppercase tracking-[0.22em] text-gold-light/80 pt-1">
+              105 Hectáreas de vides productivas a 9.5 km del corazón de San Miguel de Allende
+            </p>
+          </div>
+
+          <!-- Right Floating Wine & Award Showcase Card -->
+          <div class="lg:col-span-4 hidden lg:block">
+            <div class="bg-black/45 backdrop-blur-xl p-6 hairline-dark gold-glow relative overflow-hidden group">
+              <div class="flex items-center justify-between gap-3 pb-4 mb-4 border-b border-gold-burnished/25">
+                <div>
+                  <span class="font-label-sm text-[9px] uppercase tracking-[0.24em] text-gold-light block">Reconocimiento Mundial</span>
+                  <h3 class="font-serif text-lg text-cantera-sand">Vino Premiado Internacionalmente</h3>
+                </div>
+                <span class="material-symbols-outlined text-3xl text-gold-light">military_tech</span>
+              </div>
+              <div class="grid grid-cols-2 gap-3 mb-4">
+                <div class="p-3 bg-white/5 hairline-dark">
+                  <span class="font-label-sm text-[9px] uppercase tracking-widest text-gold-light block">Bruselas 2024</span>
+                  <span class="font-serif text-sm text-cantera-sand font-semibold">Medalla de Oro</span>
+                  <span class="font-body-sm text-[11px] text-cantera-sand/65 block mt-0.5">Concours Mondial</span>
+                </div>
+                <div class="p-3 bg-white/5 hairline-dark">
+                  <span class="font-label-sm text-[9px] uppercase tracking-widest text-gold-light block">Certamen OIV 2026</span>
+                  <span class="font-serif text-sm text-cantera-sand font-semibold">Bacchus de Oro</span>
+                  <span class="font-body-sm text-[11px] text-cantera-sand/65 block mt-0.5">Vinofed Internacional</span>
+                </div>
+              </div>
+              <div class="flex items-center gap-3.5 p-3.5 bg-primary-container/80 hairline-dark">
+                <span class="material-symbols-outlined text-2xl text-gold-light shrink-0">wine_bar</span>
+                <p class="font-body-sm text-xs text-cantera-sand/90 leading-snug">
+                  <strong>120 Botellas Anuales Incluidas:</strong> Recibe cada año 120 botellas de la cosecha de tu propio condominio con etiqueta privada.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Integrated Key Metrics Bar (6 Animated Counters) -->
+        <div class="mt-14 pt-8 border-t border-gold-burnished/25 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 backdrop-blur-md bg-black/30 p-6 hairline-dark">
+          <div class="flex flex-col">
+            <span class="font-serif text-3xl lg:text-4xl text-gold-light leading-none" data-count="105">105</span>
+            <span class="font-label-sm text-[10px] uppercase tracking-[0.2em] text-cantera-sand mt-2 font-semibold">Hectáreas</span>
+            <span class="font-body-sm text-[11px] text-cantera-sand/60 mt-0.5">80% áreas verdes y lagos</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-serif text-3xl lg:text-4xl text-gold-light leading-none" data-count="9">9</span>
+            <span class="font-label-sm text-[10px] uppercase tracking-[0.2em] text-cantera-sand mt-2 font-semibold">Reservas</span>
+            <span class="font-body-sm text-[11px] text-cantera-sand/60 mt-0.5">Comunidades vinícolas</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-serif text-3xl lg:text-4xl text-gold-light leading-none" data-count="402">402</span>
+            <span class="font-label-sm text-[10px] uppercase tracking-[0.2em] text-cantera-sand mt-2 font-semibold">Lotes Campestres</span>
+            <span class="font-body-sm text-[11px] text-cantera-sand/60 mt-0.5">Tipo 1,008 m² • $400 USD/m²</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-serif text-3xl lg:text-4xl text-gold-light leading-none" data-count="11">11</span>
+            <span class="font-label-sm text-[10px] uppercase tracking-[0.2em] text-cantera-sand mt-2 font-semibold">Viñedos</span>
+            <span class="font-body-sm text-[11px] text-cantera-sand/60 mt-0.5">En producción activa</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-serif text-3xl lg:text-4xl text-gold-light leading-none" data-count="30" data-suffix="+">30+</span>
+            <span class="font-label-sm text-[10px] uppercase tracking-[0.2em] text-cantera-sand mt-2 font-semibold">Amenidades</span>
+            <span class="font-body-sm text-[11px] text-cantera-sand/60 mt-0.5">Cable Ski, Ecuestre, Wyndham</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-serif text-3xl lg:text-4xl text-gold-light leading-none" data-count="120">120</span>
+            <span class="font-label-sm text-[10px] uppercase tracking-[0.2em] text-cantera-sand mt-2 font-semibold">Botellas / Año</span>
+            <span class="font-body-sm text-[11px] text-cantera-sand/60 mt-0.5">Cosecha propia de por vida</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         PRESTIGE MARQUEE BAND
+         ====================================================================== -->
+    <div class="bg-slate-charcoal text-gold-light/80 py-3.5 border-y border-gold-burnished/25 overflow-hidden select-none">
+      <div class="marquee-track flex items-center gap-12 font-label-sm text-[10px] uppercase tracking-[0.26em]">
+        <span>• LA PRIMERA RESERVA RESIDENCIAL FULLNESS DE MÉXICO</span>
+        <span>• MEDALLA DE ORO CONCOURS MONDIAL DE BRUXELLES 2024</span>
+        <span>• BACCHUS DE ORO OIV 2026</span>
+        <span>• ARQUITECTURA DE AUTOR POR ARTIGAS ARQUITECTOS</span>
+        <span>• HOTEL ESPLENDOR BY WYNDHAM (80% INGRESOS DE RENTA PARA EL PROPIETARIO)</span>
+        <span>• 1ER CABLE SKI RIXEN DEL BAJÍO</span>
+        <span>• CLUB ECUESTRE CON 100 CABALLERIZAS &amp; POLO ARENA</span>
+        <span>• DESARROLLADO POR INOBA DESARROLLOS &amp; KELLER WILLIAMS MÉXICO</span>
+        <span>• LA PRIMERA RESERVA RESIDENCIAL FULLNESS DE MÉXICO</span>
+        <span>• MEDALLA DE ORO CONCOURS MONDIAL DE BRUXELLES 2024</span>
+        <span>• BACCHUS DE ORO OIV 2026</span>
+        <span>• ARQUITECTURA DE AUTOR POR ARTIGAS ARQUITECTOS</span>
+      </div>
+    </div>
+
+    <!-- ======================================================================
+         2. SECTION: ¿QUÉ ES FULLNESS? (INTERACTIVE 4 PILLARS EXPERIENCE)
+         ====================================================================== -->
+    <section id="fullness" class="py-24 lg:py-32 bg-surface relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end mb-16 reveal-up">
+          <div class="lg:col-span-5 space-y-4">
+            <span class="font-label-sm text-[11px] uppercase tracking-[0.26em] text-gold-burnished font-semibold block">Filosofía de Vida &amp; Trascendencia</span>
+            <h2 class="font-serif text-4xl lg:text-5xl text-primary tracking-tight leading-tight">
+              ¿Qué es <span class="italic font-light text-primary-container">Fullness?</span>
+            </h2>
+            <div class="w-16 h-0.5 bg-gold-burnished"></div>
+          </div>
+          <div class="lg:col-span-7">
+            <p class="font-body-lg text-lg text-on-surface-variant font-light leading-relaxed">
+              Diseñado para regresar la naturaleza a tu hogar e integrar la cultura enológica como eje del día a día. <strong>Fullness</strong> une sustentabilidad regenerativa, bienestar holístico, arquitectura de autor y comunidad en un santuario de 105 hectáreas en San Miguel de Allende.
+            </p>
+          </div>
+        </div>
+
+        <!-- Interactive 4 Pillars Split Showcase -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch reveal-up">
+          <!-- Left: 4 Interactive Pillar Selector Cards -->
+          <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- Pilar 1 -->
+            <div class="fullness-pillar-card bg-cabernet-deep text-cantera-sand border border-gold-burnished p-7 cursor-pointer transition-all duration-300 flex flex-col justify-between" data-cursor="PILAR 01">
+              <div>
+                <div class="w-11 h-11 bg-gold-burnished/20 text-gold-light flex items-center justify-center mb-5 hairline-dark">
+                  <span class="material-symbols-outlined text-2xl">eco</span>
+                </div>
+                <span class="font-label-sm text-[10px] uppercase tracking-[0.22em] text-gold-light font-semibold">Pilar 01</span>
+                <h3 class="font-serif text-xl font-semibold mt-1 mb-2.5">Sustentabilidad</h3>
+                <p class="font-body-sm text-xs opacity-85 leading-relaxed">
+                  80% del desarrollo son áreas verdes y lagos. Ciclo hídrico sustentable, energía solar pasiva y arquitectura bioclimática bajo criterios ESG.
+                </p>
+              </div>
+              <div class="pt-4 mt-4 border-t border-gold-burnished/30 flex items-center justify-between text-[10px] font-label-sm uppercase tracking-widest text-gold-light">
+                <span>Ciclo Hídrico Cerrado</span>
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </div>
+            </div>
+
+            <!-- Pilar 2 -->
+            <div class="fullness-pillar-card bg-surface-container-low text-on-surface hairline-light p-7 cursor-pointer transition-all duration-300 flex flex-col justify-between hover:border-gold-burnished" data-cursor="PILAR 02">
+              <div>
+                <div class="w-11 h-11 bg-primary-container text-gold-light flex items-center justify-center mb-5">
+                  <span class="material-symbols-outlined text-2xl">spa</span>
+                </div>
+                <span class="font-label-sm text-[10px] uppercase tracking-[0.22em] text-gold-burnished font-semibold">Pilar 02</span>
+                <h3 class="font-serif text-xl font-semibold mt-1 mb-2.5">Bienestar</h3>
+                <p class="font-body-sm text-xs opacity-80 leading-relaxed">
+                  Aire puro a 1,910 msnm, senderos de contemplación, spa holístico, yoga y "La Santa Tierra", nuestra granja orgánica regenerativa.
+                </p>
+              </div>
+              <div class="pt-4 mt-4 border-t border-outline-variant/40 flex items-center justify-between text-[10px] font-label-sm uppercase tracking-widest text-gold-burnished">
+                <span>Regeneración Integral</span>
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </div>
+            </div>
+
+            <!-- Pilar 3 -->
+            <div class="fullness-pillar-card bg-surface-container-low text-on-surface hairline-light p-7 cursor-pointer transition-all duration-300 flex flex-col justify-between hover:border-gold-burnished" data-cursor="PILAR 03">
+              <div>
+                <div class="w-11 h-11 bg-primary-container text-gold-light flex items-center justify-center mb-5">
+                  <span class="material-symbols-outlined text-2xl">wine_bar</span>
+                </div>
+                <span class="font-label-sm text-[10px] uppercase tracking-[0.22em] text-gold-burnished font-semibold">Pilar 03</span>
+                <h3 class="font-serif text-xl font-semibold mt-1 mb-2.5">Estilo de Vida</h3>
+                <p class="font-body-sm text-xs opacity-80 leading-relaxed">
+                  Cultura vitivinícola, alta gastronomía de campo, Club Ecuestre, Rixen Cable Ski náutico y agenda cultural todo el año.
+                </p>
+              </div>
+              <div class="pt-4 mt-4 border-t border-outline-variant/40 flex items-center justify-between text-[10px] font-label-sm uppercase tracking-widest text-gold-burnished">
+                <span>Cultura Enológica Activa</span>
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </div>
+            </div>
+
+            <!-- Pilar 4 -->
+            <div class="fullness-pillar-card bg-surface-container-low text-on-surface hairline-light p-7 cursor-pointer transition-all duration-300 flex flex-col justify-between hover:border-gold-burnished" data-cursor="PILAR 04">
+              <div>
+                <div class="w-11 h-11 bg-primary-container text-gold-light flex items-center justify-center mb-5">
+                  <span class="material-symbols-outlined text-2xl">all_inclusive</span>
+                </div>
+                <span class="font-label-sm text-[10px] uppercase tracking-[0.22em] text-gold-burnished font-semibold">Pilar 04</span>
+                <h3 class="font-serif text-xl font-semibold mt-1 mb-2.5">Propósito Fullness</h3>
+                <p class="font-body-sm text-xs opacity-80 leading-relaxed">
+                  El equilibrio armónico entre cuerpo, mente y legado. No compras solo metros cuadrados; defines tu tiempo en la tierra.
+                </p>
+              </div>
+              <div class="pt-4 mt-4 border-t border-outline-variant/40 flex items-center justify-between text-[10px] font-label-sm uppercase tracking-widest text-gold-burnished">
+                <span>Legado Generacional</span>
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Dynamic Visual Immersion Stage -->
+          <div class="lg:col-span-6 bg-cabernet-deep text-cantera-sand relative overflow-hidden cellar-shadow flex flex-col justify-end min-h-[460px] p-8 lg:p-12 hairline-dark">
+            <img id="fullness-preview-img" src="https://assets.cdn.filesafe.space/ZZleTToDW7ldi8Rlm96v/media/6a39962294d484b9c6b6551d.jpeg" alt="Filosofía Fullness La Santa Vid" class="absolute inset-0 w-full h-full object-cover opacity-45 transition-opacity duration-300" />
+            <div class="absolute inset-0 bg-gradient-to-t from-cabernet-deep via-cabernet-deep/75 to-transparent"></div>
+
+            <div class="relative z-10 space-y-4">
+              <span id="fullness-preview-num" class="inline-block px-3 py-1 bg-gold-burnished text-cabernet-deep font-label-sm text-[10px] uppercase tracking-widest font-bold">Pilar 01</span>
+              <h3 id="fullness-preview-title" class="font-serif text-3xl lg:text-4xl text-cantera-sand">Sustentabilidad Regenerativa</h3>
+              <p id="fullness-preview-sub" class="font-label-sm text-xs uppercase tracking-[0.2em] text-gold-light">80% Reserva Verde &amp; Ciclo Hídrico Cerrado</p>
+              <p id="fullness-preview-desc" class="font-body-md text-sm text-cantera-sand/85 leading-relaxed font-light">
+                El 80% de las 105 hectáreas de La Santa Vid permanece como reserva ecológica, viñedos y espejos de agua. Incorporamos captación pluvial inteligente, energía solar pasiva, tratamiento biológico del agua y arquitectura bioclimática bajo principios ESG.
+              </p>
+              <div id="fullness-preview-metrics" class="pt-4 border-t border-gold-burnished/30 grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <div class="flex items-center gap-2.5 text-xs font-label-md uppercase tracking-wider text-gold-light">
+                  <span class="w-1.5 h-1.5 rounded-circle-exception bg-gold-light"></span>
+                  <span>80% Áreas Verdes y Lagos</span>
+                </div>
+                <div class="flex items-center gap-2.5 text-xs font-label-md uppercase tracking-wider text-gold-light">
+                  <span class="w-1.5 h-1.5 rounded-circle-exception bg-gold-light"></span>
+                  <span>Ciclo Hídrico 100% Regenerativo</span>
+                </div>
+                <div class="flex items-center gap-2.5 text-xs font-label-md uppercase tracking-wider text-gold-light">
+                  <span class="w-1.5 h-1.5 rounded-circle-exception bg-gold-light"></span>
+                  <span>Energía Limpia &amp; ESG</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Manifesto Quote Highlight Banner -->
+        <div class="mt-14 p-10 lg:p-14 bg-cabernet-deep text-cantera-sand relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8 cellar-shadow hairline-dark reveal-up">
+          <div class="absolute -right-8 -bottom-10 opacity-10 text-gold-light select-none pointer-events-none">
+            <span class="material-symbols-outlined text-[180px]">format_quote</span>
+          </div>
+          <div class="relative z-10 max-w-3xl">
+            <span class="font-label-sm text-[10px] uppercase tracking-[0.28em] text-gold-light block mb-2">Manifiesto La Santa Vid</span>
+            <p class="font-serif text-2xl lg:text-3xl italic font-light text-cantera-sand leading-snug">
+              “No vine a solo comprar una casa entre viñedos. Vine a elegir cómo quiero vivir.”
+            </p>
+          </div>
+          <a href="#masterplan" class="relative z-10 shrink-0 inline-flex items-center gap-3 bg-gold-burnished hover:bg-gold-light text-cabernet-deep font-label-lg text-xs tracking-[0.2em] uppercase px-8 py-4 font-bold transition-all">
+            <span>Explorar Disponibilidad</span>
+            <span class="material-symbols-outlined text-base">explore</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. SECTION: SANTUARIO ENOLÓGICO (6,000 M², MEDALLAS DE ORO & SOMMELIER)
+         ====================================================================== -->
+    <section id="enologia" class="py-24 lg:py-32 bg-cabernet-deep text-cantera-sand relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter relative z-10">
+        <!-- Section Header -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-end mb-16 reveal-up">
+          <div class="lg:col-span-7 space-y-3">
+            <span class="font-label-sm text-[11px] uppercase tracking-[0.26em] text-gold-light font-semibold block">Corazón Espiritual del Desarrollo • 6,000 m²</span>
+            <h2 class="font-serif text-4xl lg:text-5xl text-cantera-sand tracking-tight leading-tight">
+              Centro Enológico &amp; <span class="italic font-light text-gold-light">Vinos Galardonados a Nivel Mundial</span>
+            </h2>
+          </div>
+          <div class="lg:col-span-5">
+            <p class="font-body-md text-sm text-cantera-sand/80 leading-relaxed font-light">
+              Con <strong>6,000 m²</strong> dedicados al arte del vino y capacidad para <strong>20,000 barricas</strong>, nuestros 11 viñedos productivos a 1,910 msnm han posicionado a La Santa Vid en la élite vitivinícola internacional.
+            </p>
+          </div>
+        </div>
+
+        <!-- Campaign Gallery + Awards Triad -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-20 reveal-up">
+          <!-- Left: Uploaded Official Campaign Renders Showcase -->
+          <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div class="relative aspect-[4/5] overflow-hidden hairline-dark cellar-shadow group">
+              <img src="assets/promo-tu-vida-entre-vinedos.jpg" alt="Tu Vida Entre Viñedos — Medalla de Oro y Bacchus de Oro" class="w-full h-full object-cover arch-card-img" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-5">
+                <span class="font-label-sm text-[9px] uppercase tracking-widest text-gold-light">Cosecha Premiada</span>
+                <span class="font-serif text-lg text-cantera-sand">Reserva de la Casa • San Miguel de Allende</span>
+              </div>
+            </div>
+            <div class="flex flex-col gap-5">
+              <div class="relative aspect-[16/10] overflow-hidden hairline-dark cellar-shadow group">
+                <img src="assets/promo-coleccion-privada.jpg" alt="La Santa Vid Reserva y Viñedos Colección Privada" class="w-full h-full object-cover arch-card-img" />
+              </div>
+              <div class="relative aspect-[16/10] overflow-hidden hairline-dark cellar-shadow group">
+                <img src="assets/promo-invierte-en-tu-legado.jpg" alt="Invierte en tu Legado — 120 Botellas al Año Incluidas" class="w-full h-full object-cover arch-card-img" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: International Medals & 120 Bottles Guarantee -->
+          <div class="lg:col-span-5 space-y-5">
+            <!-- Award 1 -->
+            <div class="p-6 bg-white/5 backdrop-blur-md hairline-dark flex items-start gap-4">
+              <div class="w-12 h-12 bg-gold-burnished text-cabernet-deep flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-2xl">workspace_premium</span>
+              </div>
+              <div>
+                <span class="font-label-sm text-[10px] uppercase tracking-widest text-gold-light font-semibold block">Concours Mondial de Bruxelles</span>
+                <h3 class="font-serif text-xl text-cantera-sand mt-0.5">Medalla de Oro 2024</h3>
+                <p class="font-body-sm text-xs text-cantera-sand/75 mt-1 leading-relaxed">
+                  Galardón global otorgado en cata a ciegas a nuestro Malbec Reserva por su estructura, elegancia en barrica de roble francés y carácter mineral de altura.
+                </p>
+              </div>
+            </div>
+
+            <!-- Award 2 -->
+            <div class="p-6 bg-white/5 backdrop-blur-md hairline-dark flex items-start gap-4">
+              <div class="w-12 h-12 bg-gold-burnished text-cabernet-deep flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-2xl">military_tech</span>
+              </div>
+              <div>
+                <span class="font-label-sm text-[10px] uppercase tracking-widest text-gold-light font-semibold block">Avalado por la OIV &amp; Vinofed</span>
+                <h3 class="font-serif text-xl text-cantera-sand mt-0.5">Bacchus de Oro 2026</h3>
+                <p class="font-body-sm text-xs text-cantera-sand/75 mt-1 leading-relaxed">
+                  Reconocimiento cumbre de la Organización Internacional de la Viña y el Vino, consolidando el terroir de La Santa Vid entre las grandes bodegas del mundo.
+                </p>
+              </div>
+            </div>
+
+            <!-- 120 Bottles Guarantee Box -->
+            <div class="p-7 bg-gradient-to-br from-gold-burnished/25 via-primary-container to-cabernet-deep hairline-dark gold-glow">
+              <div class="flex items-center gap-3 mb-3">
+                <span class="material-symbols-outlined text-3xl text-gold-light">liquor</span>
+                <div>
+                  <span class="font-label-sm text-[9px] uppercase tracking-[0.24em] text-gold-light block">Privilegio Vitalicio de Propietario</span>
+                  <h4 class="font-serif text-xl text-cantera-sand">120 Botellas Anuales de por Vida</h4>
+                </div>
+              </div>
+              <p class="font-body-sm text-xs text-cantera-sand/85 leading-relaxed mb-4">
+                En la adquisición de tu lote residencial o casa de autor, recibes anualmente <strong>120 botellas de vino de producción propia</strong> (o 60 botellas/año por fracción en esquema Fractional) directamente de la cava a tu mesa, con etiqueta personalizada de tu familia.
+              </p>
+              <a href="#contacto-vip" class="inline-flex items-center gap-2 font-label-sm text-[10px] uppercase tracking-[0.2em] text-gold-light hover:text-white font-bold">
+                <span>Agendar Cata Privada en el Viñedo</span>
+                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- INTERACTIVE SOMMELIER & TERROIR EXPLORER -->
+        <div class="bg-black/35 backdrop-blur-xl p-8 lg:p-12 hairline-dark reveal-up">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-8 mb-8 border-b border-gold-burnished/25">
+            <div>
+              <span class="font-label-sm text-[10px] uppercase tracking-[0.24em] text-gold-light block">Cata Virtual Interactiva • 9 Reservas Vinícolas</span>
+              <h3 class="font-serif text-2xl lg:text-3xl text-cantera-sand mt-1">Explora las Notas de Cata de Nuestro Terroir</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <button type="button" class="wine-varietal-tab px-4 py-2.5 bg-gold-burnished text-cabernet-deep border border-gold-light font-label-sm text-[10px] uppercase tracking-widest font-bold transition-all">
+                01 • Malbec Oro
+              </button>
+              <button type="button" class="wine-varietal-tab px-4 py-2.5 bg-white/5 text-cantera-sand hairline-dark font-label-sm text-[10px] uppercase tracking-widest font-semibold hover:bg-white/10 transition-all">
+                02 • Cabernet Sauvignon
+              </button>
+              <button type="button" class="wine-varietal-tab px-4 py-2.5 bg-white/5 text-cantera-sand hairline-dark font-label-sm text-[10px] uppercase tracking-widest font-semibold hover:bg-white/10 transition-all">
+                03 • Syrah &amp; Tempranillo
+              </button>
+              <button type="button" class="wine-varietal-tab px-4 py-2.5 bg-white/5 text-cantera-sand hairline-dark font-label-sm text-[10px] uppercase tracking-widest font-semibold hover:bg-white/10 transition-all">
+                04 • Blancos de Altura
+              </button>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-5 relative aspect-[4/3] overflow-hidden hairline-dark">
+              <img id="wine-preview-img" src="assets/promo-tu-vida-entre-vinedos.jpg" alt="Cata de Vino La Santa Vid" class="w-full h-full object-cover transition-opacity duration-300" />
+            </div>
+            <div class="lg:col-span-7 space-y-5">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <span id="wine-reserva" class="font-label-sm text-[10px] uppercase tracking-[0.22em] text-gold-light font-semibold">Reserva IV • Corazón Enológico</span>
+                <span id="wine-award" class="px-3 py-1 bg-gold-burnished/20 text-gold-light font-label-sm text-[10px] uppercase tracking-wider hairline-dark">Medalla de Oro Bruselas 2024 &amp; Bacchus de Oro 2026</span>
+              </div>
+              <h4 id="wine-name" class="font-serif text-3xl text-cantera-sand">Malbec Gran Reserva</h4>
+              <p id="wine-notes" class="font-body-md text-sm text-cantera-sand/85 leading-relaxed font-light">
+                Violáceo profundo. Aromas intensos a ciruela negra madura, violetas imperiales, cacao amargo y tabaco dulce. En boca presenta taninos sedosos, acidez equilibrada de terroir de altura (1,910 msnm) y un final persistente y mineral.
+              </p>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-gold-burnished/25">
+                <div>
+                  <span class="font-label-sm text-[9px] uppercase tracking-widest text-gold-light block">Crianza en Cava</span>
+                  <span id="wine-aging" class="font-body-sm text-xs text-cantera-sand mt-1 block">18 meses en barrica de roble francés de primer uso</span>
+                </div>
+                <div>
+                  <span class="font-label-sm text-[9px] uppercase tracking-widest text-gold-light block">Maridaje Sugerido</span>
+                  <span id="wine-pairing" class="font-body-sm text-xs text-cantera-sand mt-1 block">Cortes madurados a la leña, cordero al romero y mole negro.</span>
+                </div>
+                <div>
+                  <span class="font-label-sm text-[9px] uppercase tracking-widest text-gold-light block">Servicio Ideal</span>
+                  <span id="wine-temp" class="font-serif text-lg text-gold-light mt-0.5 block">16°C – 18°C</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. SECTION: CINEMA & SOCIAL VIDEO HUB (OFFICIAL FILMS & YOUTUBE)
+         ====================================================================== -->
+    <section id="cinema" class="py-24 bg-slate-charcoal text-cantera-sand relative overflow-hidden border-t border-gold-burnished/20">
+      <div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14 reveal-up">
+          <div>
+            <span class="font-label-sm text-[11px] uppercase tracking-[0.26em] text-gold-light font-semibold block mb-2">Experiencia Audiovisual Inmersiva • @LaSantaVidSMA</span>
+            <h2 class="font-serif text-4xl lg:text-5xl text-cantera-sand tracking-tight">
+              Cinema &amp; <span class="italic font-light text-gold-light">Crónicas del Viñedo</span>
+            </h2>
+          </div>
+          <a href="https://www.youtube.com/@LaSantaVidSMA" target="_blank" rel="noopener" class="inline-flex items-center gap-2.5 px-6 py-3.5 bg-white/5 hover:bg-gold-burnished hover:text-cabernet-deep hairline-dark font-label-sm text-[10px] uppercase tracking-[0.2em] transition-all">
+            <span class="material-symbols-outlined text-base">smart_display</span>
+            <span>Canal Oficial YouTube</span>
+          </a>
+        </div>
+
+        <!-- Featured Film + 4 Official Video Cards -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 reveal-up">
+          <!-- Featured Film (Left 7 cols) -->
+          <div onclick="window.openVideoModal('youtube', '6as0NMsiI94', 'La Vida Como Debe Ser — Manifiesto Oficial La Santa Vid')" data-cursor="REPRODUCIR" class="lg:col-span-7 relative aspect-video overflow-hidden hairline-dark group cursor-pointer bg-black cellar-shadow">
+            <video class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" autoplay muted loop playsinline poster="assets/promo-invierte-en-tu-legado.jpg">
+              <source src="https://assets.cdn.filesafe.space/ZZleTToDW7ldi8Rlm96v/media/6acfc23a1ea74c571f3e88e9.mp4" type="video/mp4" />
+            </video>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-20 h-20 rounded-circle-exception bg-gold-burnished/90 group-hover:bg-gold-light text-cabernet-deep flex items-center justify-center transition-all group-hover:scale-110 shadow-2xl">
+                <span class="material-symbols-outlined text-4xl ml-1">play_arrow</span>
+              </div>
+            </div>
+            <div class="absolute bottom-6 inset-x-6 flex items-end justify-between gap-4">
+              <div>
+                <span class="px-2.5 py-1 bg-gold-burnished text-cabernet-deep font-label-sm text-[9px] uppercase tracking-widest font-bold">Film Insignia • Audio Disponible</span>
+                <h3 class="font-serif text-2xl sm:text-3xl text-cantera-sand mt-2">“La Vida Como Debe Ser” — Manifiesto La Santa Vid</h3>
+                <p class="font-body-sm text-xs text-cantera-sand/75 mt-1">Recorrido cinematográfico por las 105 hectáreas, viñedos, lago y residencias en San Miguel de Allende.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right 5 cols: 2x2 Grid of Official YouTube & MP4 Films -->
+          <div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- Video 2: Vendimia -->
+            <div onclick="window.openVideoModal('youtube', 'SUFp6bxNDeU', '1er Vendimia LSV — La Santa Cosecha')" data-cursor="VER VIDEO" class="relative aspect-video sm:aspect-square overflow-hidden hairline-dark group cursor-pointer bg-black">
+              <img src="https://img.youtube.com/vi/SUFp6bxNDeU/hqdefault.jpg" alt="1er Vendimia La Santa Cosecha" class="w-full h-full object-cover opacity-75 group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-transparent"></div>
+              <div class="absolute top-3 right-3 w-9 h-9 rounded-circle-exception bg-gold-burnished text-cabernet-deep flex items-center justify-center">
+                <span class="material-symbols-outlined text-lg">play_arrow</span>
+              </div>
+              <div class="absolute bottom-3 inset-x-3">
+                <span class="font-label-sm text-[8px] uppercase tracking-widest text-gold-light block">Vendimia &amp; Enología</span>
+                <h4 class="font-serif text-sm text-cantera-sand leading-snug">1ra Vendimia “La Santa Cosecha”</h4>
+              </div>
+            </div>
+
+            <!-- Video 3: Club Ecuestre MP4 -->
+            <div onclick="window.openVideoModal('mp4', 'https://assets.cdn.filesafe.space/ZZleTToDW7ldi8Rlm96v/media/69b1f92e8d3eae64b62ac216.mp4', 'Club Ecuestre &amp; Amenidades en Vivo')" data-cursor="VER VIDEO" class="relative aspect-video sm:aspect-square overflow-hidden hairline-dark group cursor-pointer bg-black">
+              <video class="w-full h-full object-cover opacity-75 group-hover:scale-105 transition-transform duration-500" muted loop playsinline autoplay>
+                <source src="https://assets.cdn.filesafe.space/ZZleTToDW7ldi8Rlm96v/media/69b1f92e8d3eae64b62ac216.mp4" type="video/mp4" />
+              </video>
+              <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-transparent"></div>
+              <div class="absolute top-3 right-3 w-9 h-9 rounded-circle-exception bg-gold-burnished text-cabernet-deep flex items-center justify-center">
+                <span class="material-symbols-outlined text-lg">play_arrow</span>
+              </div>
+              <div class="absolute bottom-3 inset-x-3">
+                <span class="font-label-sm text-[8px] uppercase tracking-widest text-gold-light block">100 Caballerizas • Polo Arena</span>
+                <h4 class="font-serif text-sm text-cantera-sand leading-snug">Club Ecuestre La Santa Vid</h4>
+              </div>
+            </div>
+
+            <!-- Video 4: Testimonial Guillermo Santoyo -->
+            <div onclick="window.openVideoModal('youtube', 'PDuhbGoEy5o', 'Guillermo Santoyo — Miembro de la Familia La Santa Vid')" data-cursor="VER VIDEO" class="relative aspect-video sm:aspect-square overflow-hidden hairline-dark group cursor-pointer bg-black">
+              <img src="https://img.youtube.com/vi/PDuhbGoEy5o/maxresdefault.jpg" alt="Guillermo Santoyo Testimonio La Santa Vid" class="w-full h-full object-cover opacity-75 group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-transparent"></div>
+              <div class="absolute top-3 right-3 w-9 h-9 rounded-circle-exception bg-gold-burnished text-cabernet-deep flex items-center justify-center">
+                <span class="material-symbols-outlined text-lg">play_arrow</span>
+              </div>
+              <div class="absolute bottom-3 inset-x-3">
+                <span class="font-label-sm text-[8px] uppercase tracking-widest text-gold-light block">Comunidad &amp; Testimonio</span>
+                <h4 class="font-serif text-sm text-cantera-sand leading-snug">Guillermo Santoyo • Familia Fullness</h4>
+              </div>
+            </div>
+
+            <!-- Video 5: Entrevista Imagen Radio -->
+            <div onclick="window.openVideoModal('youtube', 'MQeV4_VwxlY', 'Entrevista Directiva en Imagen Radio — Visión Patrimonial La Santa Vid')" data-cursor="VER VIDEO" class="relative aspect-video sm:aspect-square overflow-hidden hairline-dark group cursor-pointer bg-black">
+              <img src="https://img.youtube.com/vi/MQeV4_VwxlY/hqdefault.jpg" alt="Entrevista Imagen Radio La Santa Vid" class="w-full h-full object-cover opacity-75 group-hover:scale-105 transition-transform duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-transparent"></div>
+              <div class="absolute top-3 right-3 w-9 h-9 rounded-circle-exception bg-gold-burnished text-cabernet-deep flex items-center justify-center">
+                <span class="material-symbols-outlined text-lg">play_arrow</span>
+              </div>
+              <div class="absolute bottom-3 inset-x-3">
+                <span class="font-label-sm text-[8px] uppercase tracking-widest text-gold-light block">Prensa &amp; Plusvalía</span>
+                <h4 class="font-serif text-sm text-cantera-sand leading-snug">Entrevista en Imagen Radio</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. SECTION: ARQUITECTURA DE AUTOR (ARTIGAS ARQUITECTOS — 8 MODELOS)
+         ====================================================================== -->
+    <section id="residencias" class="py-24 lg:py-32 bg-surface relative">
+      <div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter">
+        <!-- Header & Category Filter -->
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-14 reveal-up">
+          <div>
+            <span class="font-label-sm text-[11px] uppercase tracking-[0.26em] text-gold-burnished font-semibold block mb-2">Colección Arquitectónica • Artigas Arquitectos</span>
+            <h2 class="font-serif text-4xl lg:text-5xl text-primary tracking-tight">
+              Residencias de Autor &amp; <span class="italic font-light text-primary-container">Casas entre Viñedos</span>
+            </h2>
+            <p class="font-body-md text-sm text-on-surface-variant max-w-2xl mt-3 font-light leading-relaxed">
+              Seis prototipos llave en mano diseñados por la firma <strong>Artigas Arquitectos</strong> (desde 176 m² hasta 450.20 m²), además de nuestras dos residencias insignia en modalidad <strong>Fractional 1/8</strong> (<em>Casa Plenitud</em> y <em>Casa Inspiración</em>) totalmente amuebladas y equipadas.
+            </p>
+          </div>
+
+          <!-- Filter Buttons -->
+          <div class="flex flex-wrap items-center gap-2 shrink-0">
+            <button type="button" data-filter="all" class="res-filter-btn px-5 py-3 bg-primary-container text-cantera-sand font-label-sm text-[10px] uppercase tracking-[0.2em] font-semibold transition-all">
+              Todos los Modelos (8)
+            </button>
+            <button type="button" data-filter="autor" class="res-filter-btn px-5 py-3 bg-surface-container text-on-surface hover:bg-cantera-cream font-label-sm text-[10px] uppercase tracking-[0.2em] font-semibold transition-all">
+              Prototipos Artigas (6)
+            </button>
+            <button type="button" data-filter="fractional" class="res-filter-btn px-5 py-3 bg-surface-container text-on-surface hover:bg-cantera-cream font-label-sm text-[10px] uppercase tracking-[0.2em] font-semibold transition-all">
+              Casas Fractional 1/8 (2)
+            </button>
+          </div>
+        </div>
+
+        <!-- Dynamic Residences Grid (Populated by app.js) -->
+        <div id="residences-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-14 reveal-up"></div>
+
+        <!-- Custom Estates Banner (Proyectos Personalizados en 1,008 m² o 2,016 m²) -->
+        <div class="bg-cantera-cream hairline-light p-8 lg:p-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center cellar-shadow reveal-up">
+          <div class="lg:col-span-8 space-y-3">
+            <div class="inline-flex items-center gap-2 px-3 py-1 bg-primary-container text-gold-light font-label-sm text-[9px] uppercase tracking-widest">
+              <span>Diseño a la Medida • GAADISA &amp; Artigas</span>
+            </div>
+            <h3 class="font-serif text-2xl lg:text-3xl text-primary">¿Buscas un Proyecto Personalizado de 5 o 6 Habitaciones en 2,016 m²?</h3>
+            <p class="font-body-sm text-sm text-on-surface-variant leading-relaxed">
+              Más de 30 familias han diseñado su residencia a medida uniendo uno o dos terrenos (1,008 m² a 2,016 m²) frente a los viñedos con nuestra constructora <em>in-house</em> <strong>GAADISA Construction</strong> y el reglamento arquitectónico de <strong>Artigas Arquitectos</strong>.
+            </p>
+          </div>
+          <div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col gap-3">
+            <a href="https://wa.me/525535352057?text=Hola%2C%20me%20interesa%20un%20Proyecto%20Personalizado%20de%20Residencia%20en%20La%20Santa%20Vid." target="_blank" rel="noopener" class="w-full py-4 bg-primary-container hover:bg-cabernet-deep text-cantera-sand text-center font-label-sm text-[11px] uppercase tracking-[0.2em] font-bold transition-all">
+              Cotizar Proyecto Personalizado
+            </a>
+            <a href="#masterplan" class="w-full py-3.5 hairline-light text-primary hover:bg-surface text-center font-label-sm text-[10px] uppercase tracking-[0.2em] font-semibold transition-all">
+              Seleccionar Terreno en Masterplan
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. SECTION: ESTRUCTURAS PATRIMONIALES & SIMULADOR INTERACTIVO
+         ====================================================================== -->
+    <section id="inversion" class="py-24 lg:py-32 bg-surface-container relative">
+      <div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3 reveal-up">
+          <span class="font-label-sm text-[11px] uppercase tracking-[0.26em] text-gold-burnished font-semibold block">Estructuras Patrimoniales Con Certeza Notarial</span>
+          <h2 class="font-serif text-4xl lg:text-5xl text-primary tracking-tight">
+            Elige Tu Forma de <span class="italic font-light">Pertenecer</span>
+          </h2>
+          <p class="font-body-md text-sm text-on-surface-variant font-light leading-relaxed">
+            Desde un lote campestre de escrituración inmediata hasta una residencia llave en mano o una fracción patrimonial escriturada de 1/8 sin las cargas de mantenimiento.
+          </p>
+        </div>
+
+        <!-- 3 Primary Tier Cards -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch mb-16 reveal-up">
+          <!-- Tier 1: Lotes Residenciales -->
+          <div class="bg-surface hairline-light p-8 flex flex-col justify-between cellar-shadow hover:-translate-y-1 transition-all duration-300">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="font-label-sm text-[10px] uppercase tracking-widest text-gold-burnished font-bold">Tierra &amp; Terroir</span>
+                <span class="px-2.5 py-1 bg-surface-container text-primary font-label-sm text-[9px] uppercase tracking-wider font-semibold">Escrituración Inmediata</span>
+              </div>
+              <h3 class="font-serif text-2xl text-primary mb-1">Lotes Residenciales</h3>
+              <p class="font-body-sm text-xs text-on-surface-variant mb-6">Entre viñedos productivos con vista a Los Picachos</p>
+
+              <div class="py-4 border-y border-outline-variant/40 mb-6">
+                <span class="font-label-sm text-[10px] uppercase tracking-widest text-on-surface-variant block">Valor por m²</span>
+                <div class="flex items-baseline gap-1.5 mt-1">
+                  <span class="font-serif text-4xl text-primary">$400</span>
+                  <span class="font-label-md text-xs text-on-surface-variant uppercase tracking-wider">USD / m²</span>
+                </div>
+                <span class="font-body-sm text-xs text-gold-burnished font-medium mt-1 block">Lote tipo: 1,008 m² • 9 Reservas privadas</span>
+              </div>
+
+              <ul class="space-y-3 font-body-sm text-xs text-on-surface-variant mb-8">
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-gold-burnished text-base shrink-0">check_circle</span>
+                  <span><strong>120 botellas anuales de por vida</strong> de tu propio viñedo</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-gold-burnished text-base shrink-0">check_circle</span>
+                  <span>Construye a tu ritmo con reglamento Artigas Arquitectos</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-gold-burnished text-base shrink-0">check_circle</span>
+                  <span>Constructora in-house GAADISA disponible</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-gold-burnished text-base shrink-0">check_circle</span>
+                  <span>Acceso ilimitado a las +30 amenidades y Lifestyle Center</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-gold-burnished text-base shrink-0">check_circle</span>
+                  <span>Renta vacacional permitida desde el primer año</span>
+                </li>
+              </ul>
+            </div>
+            <a href="#masterplan" class="w-full py-4 bg-primary text-cantera-sand text-center font-label-sm text-[11px] uppercase tracking-[0.2em] font-semibold hover:bg-cabernet-deep transition-colors">
+              Ver Lotes en Masterplan
+            </a>
+          </div>
+
+          <!-- Tier 2: Residencias de Autor (Featured) -->
+          <div class="bg-surface border-2 border-gold-burnished p-8 flex flex-col justify-between cellar-shadow relative transform lg:-translate-y-3">
+            <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gold-burnished text-cabernet-deep px-4 py-1 font-label-sm text-[9px] uppercase tracking-[0.22em] font-bold">
+              Artigas Arquitectos • Más Demandado
+            </div>
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="font-label-sm text-[10px] uppercase tracking-widest text-gold-burnished font-bold">Llave en Mano</span>
+                <span class="px-2.5 py-1 bg-gold-burnished/15 text-gold-burnished font-label-sm text-[9px] uppercase tracking-wider font-bold">6 Prototipos Oficiales</span>
+              </div>
+              <h3 class="font-serif text-2xl text-primary mb-1">Residencias de Autor</h3>
+              <p class="font-body-sm text-xs text-on-surface-variant mb-6">Chardonnay, Crianza, Renacer, Tapia, Vergel &amp; Picachos</p>
+
+              <div class="py-4 border-y border-outline-variant/40 mb-6 bg-surface-container-low -mx-8 px-8">
+                <span class="font-label-sm text-[10px] uppercase tracking-widest text-on-surface-variant block">Inversión Patrimonial</span>
+                <div class="flex items-baseline gap-1.5 mt-1">
+                  <span class="font-label-sm text-xs text-on-surface-variant uppercase">Desde</span>
+                  <span class="font-serif text-4xl text-primary">$9.3</span>
+                  <span class="font-label-md text-xs text-on-surface-variant uppercase tracking-wider">MDP</span>
+                </div>
+                <span class="font-body-sm text-xs text-gold-burnished font-semibold mt-1 block">Financiamiento directo hasta 10 años</span>
+              </div>
+
+              <ul class="space-y-3 font-body-sm text-xs text-on-surface-variant mb-8">
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-gold-burnished text-base shrink-0">verified</span>
+                  <span><strong>6 modelos de 176 m² a 450.20 m²</strong> en lotes de 1,008 m²</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-gold-burnished text-base shrink-0">verified</span>
+                  <span><strong>120 botellas anuales incluidas de por vida</strong></span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-gold-burnished text-base shrink-0">verified</span>
+                  <span>Programa <strong>Wyndham® Branded Residences</strong>: recibe el 80% de ingresos de renta vacacional</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-gold-burnished text-base shrink-0">verified</span>
+                  <span>Acabados artesanales en cantera, madera y mármol</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-gold-burnished text-base shrink-0">verified</span>
+                  <span>Escrituración inmediata y garantía constructiva integral</span>
+                </li>
+              </ul>
+            </div>
+            <a href="#residencias" class="w-full py-4 bg-gold-burnished text-cabernet-deep text-center font-label-sm text-[11px] uppercase tracking-[0.2em] font-bold hover:bg-gold-light transition-colors shadow-lg">
+              Explorar los 6 Modelos
+            </a>
+          </div>
+
+          <!-- Tier 3: Modelo Fractional 1/8 -->
+          <div class="bg-surface hairline-light p-8 flex flex-col justify-between cellar-shadow hover:-translate-y-1 transition-all duration-300">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="font-label-sm text-[10px] uppercase tracking-widest text-gold-burnished font-bold">Copropiedad Inteligente 1/8</span>
+                <span class="px-2.5 py-1 bg-surface-container text-primary font-label-sm text-[9px] uppercase tracking-wider font-semibold">No es Tiempo Compartido</span>
+              </div>
+              <h3 class="font-serif text-2xl text-primary mb-1">Modelo Fractional</h3>
+              <p class="font-body-sm text-xs text-on-surface-variant mb-6">Casa Inspiración ($23.6M) &amp; Casa Plenitud ($28M) en 1/8</p>
+
+              <div class="py-4 border-y border-outline-variant/40 mb-6">
+                <span class="font-label-sm text-[10px] uppercase tracking-widest text-on-surface-variant block">Valor por Fracción (1/8)</span>
+                <div class="flex items-baseline gap-1.5 mt-1">
+                  <span class="font-label-sm text-xs text-on-surface-variant uppercase">Desde</span>
+                  <span class="font-serif text-4xl text-primary">$2.95</span>
+                  <span class="font-label-md text-xs text-on-surface-variant uppercase tracking-wider">MDP</span>
+                </div>
+                <span class="font-body-sm text-xs text-gold-burnished font-medium mt-1 block">30% enganche y hasta 36 meses directo sin banco</span>
+              </div>
+
+              <ul class="space-y-3 font-body-sm text-xs text-on-surface-variant mb-8">
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-gold-burnished text-base shrink-0">check_circle</span>
+                  <span><strong>Acciones de la sociedad propietaria:</strong> puedes usar, rentar, vender o heredar tu fracción</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-gold-burnished text-base shrink-0">check_circle</span>
+                  <span><strong>6 semanas al año rotativas</strong> en residencia para 16 personas 100% amueblada y equipada</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-gold-burnished text-base shrink-0">check_circle</span>
+                  <span><strong>60 botellas de vino al año</strong> + Membresía Familiar Fullness incluida</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="material-symbols-outlined text-gold-burnished text-base shrink-0">check_circle</span>
+                  <span>Concierge, limpieza y administración de rentas de tus semanas libres ($4,500 MXN/mes mant.)</span>
+                </li>
+              </ul>
+            </div>
+            <button type="button" onclick="window.openResidenceModal('plenitud')" class="w-full py-4 bg-primary text-cantera-sand text-center font-label-sm text-[11px] uppercase tracking-[0.2em] font-semibold hover:bg-cabernet-deep transition-colors">
+              Conocer Casas Fractional
+            </button>
+          </div>
+        </div>
+
+        <!-- INTERACTIVE INVESTMENT & WINE ALLOCATION SIMULATOR -->
+        <div class="bg-cabernet-deep text-cantera-sand p-8 lg:p-12 hairline-dark cellar-shadow reveal-up">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-8 mb-8 border-b border-gold-burnished/25">
+            <div>
+              <span class="font-label-sm text-[10px] uppercase tracking-[0.25em] text-gold-light block">Calculadora Patrimonial Interactiva</span>
+              <h3 class="font-serif text-2xl lg:text-3xl text-cantera-sand mt-1">Simula tu Inversión, Mensualidad y Dotación de Vino</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <button type="button" data-mode="lotes" class="calc-mode-btn px-5 py-2.5 bg-gold-burnished text-cabernet-deep font-label-sm text-[10px] uppercase tracking-widest font-bold transition-all">
+                01 • Lotes ($400 USD/m²)
+              </button>
+              <button type="button" data-mode="residencias" class="calc-mode-btn px-5 py-2.5 bg-white/5 text-cantera-sand hairline-dark font-label-sm text-[10px] uppercase tracking-widest font-semibold hover:bg-white/10 transition-all">
+                02 • Casas Artigas
+              </button>
+              <button type="button" data-mode="fractional" class="calc-mode-btn px-5 py-2.5 bg-white/5 text-cantera-sand hairline-dark font-label-sm text-[10px] uppercase tracking-widest font-semibold hover:bg-white/10 transition-all">
+                03 • Fractional 1/8
+              </button>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            <!-- Sliders Column -->
+            <div class="lg:col-span-6 space-y-8">
+              <div>
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <label id="calc-main-label" for="calc-slider-main" class="font-label-sm text-[11px] uppercase tracking-widest text-gold-light">Superficie del Lote Residencial</label>
+                  <span id="calc-main-val" class="font-serif text-lg text-cantera-sand font-semibold">1,008 m² ($403,200 USD)</span>
+                </div>
+                <input id="calc-slider-main" type="range" min="1008" max="2016" step="56" value="1008" class="lsv-slider" />
+              </div>
+
+              <div>
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <label for="calc-slider-term" class="font-label-sm text-[11px] uppercase tracking-widest text-gold-light">Plazo de Financiamiento Directo (Sin Banco)</label>
+                  <span id="calc-term-val" class="font-serif text-lg text-cantera-sand font-semibold">36 Meses (3 Años)</span>
+                </div>
+                <input id="calc-slider-term" type="range" min="0" max="120" step="12" value="36" class="lsv-slider" />
+                <div class="flex justify-between font-label-sm text-[9px] uppercase tracking-widest text-cantera-sand/50 mt-2">
+                  <span>Contado</span>
+                  <span>36 Meses</span>
+                  <span>60 Meses</span>
+                  <span>120 Meses (10 Años)</span>
+                </div>
+              </div>
+
+              <div class="p-4 bg-white/5 hairline-dark">
+                <span class="font-label-sm text-[9px] uppercase tracking-widest text-gold-light block mb-1">Beneficios Patrimoniales Incluidos</span>
+                <p id="calc-out-benefit" class="font-body-sm text-xs text-cantera-sand/85 leading-relaxed">
+                  Escrituración inmediata • Acceso a +30 amenidades • Apto para construir a tu ritmo con reglamento Artigas
+                </p>
+              </div>
+            </div>
+
+            <!-- Output Metrics Card -->
+            <div class="lg:col-span-6 bg-black/40 p-7 lg:p-8 hairline-dark space-y-6">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pb-6 border-b border-gold-burnished/25">
+                <div>
+                  <span class="font-label-sm text-[10px] uppercase tracking-widest text-cantera-sand/65 block">Valor Estimado</span>
+                  <span id="calc-out-total" class="font-serif text-3xl text-gold-light block mt-1">$7,547,904</span>
+                </div>
+                <div>
+                  <span class="font-label-sm text-[10px] uppercase tracking-widest text-cantera-sand/65 block">Inversión Inicial (Enganche)</span>
+                  <span id="calc-out-down" class="font-serif text-2xl text-cantera-sand block mt-1">$2,264,371 (30%)</span>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pb-6 border-b border-gold-burnished/25">
+                <div>
+                  <span class="font-label-sm text-[10px] uppercase tracking-widest text-cantera-sand/65 block">Aportación Mensual Estimada</span>
+                  <span id="calc-out-monthly" class="font-serif text-2xl text-gold-light block mt-1">$146,765 / mes</span>
+                </div>
+                <div>
+                  <span class="font-label-sm text-[10px] uppercase tracking-widest text-cantera-sand/65 block">Cosecha Anual Incluida</span>
+                  <span id="calc-out-bottles" class="font-serif text-xl text-cantera-sand block mt-1">120 Botellas / Año de por Vida</span>
+                </div>
+              </div>
+
+              <a id="calc-wa-link" href="https://wa.me/525535352057" target="_blank" rel="noopener" class="w-full py-4 bg-gold-burnished hover:bg-gold-light text-cabernet-deep font-label-sm text-xs uppercase tracking-[0.2em] font-bold transition-all flex items-center justify-center gap-2">
+                <span>Recibir Corrida Financiera Personalizada en WhatsApp</span>
+                <span class="material-symbols-outlined text-base">arrow_outward</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Non-Resident Fullness Membership Banner -->
+        <div class="mt-10 p-8 bg-surface hairline-light flex flex-col md:flex-row items-center justify-between gap-6 cellar-shadow reveal-up">
+          <div class="flex items-start sm:items-center gap-4">
+            <div class="w-12 h-12 bg-gold-burnished text-cabernet-deep flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-2xl">card_membership</span>
+            </div>
+            <div>
+              <span class="font-label-sm text-[10px] uppercase tracking-widest text-gold-burnished font-bold">Opción Exclusiva para No Residentes</span>
+              <h4 class="font-serif text-xl text-primary">Membresía Familiar Fullness • $500,000 MXN</h4>
+              <p class="font-body-sm text-xs text-on-surface-variant mt-0.5">
+                Acceso familiar a las +30 amenidades, Club Ecuestre, Cable Ski RIXEN, Centro Enológico, catas privadas y torneos para residentes de San Miguel de Allende o Querétaro.
+              </p>
+            </div>
+          </div>
+          <a href="#contacto-vip" class="shrink-0 px-6 py-3.5 bg-primary-container text-cantera-sand font-label-sm text-[10px] uppercase tracking-[0.2em] font-semibold hover:bg-cabernet-deep transition-colors">
+            Solicitar Estatutos
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. SECTION: LIFESTYLE CENTER & ECOSISTEMA WYNDHAM® (+30 AMENIDADES)
+         ====================================================================== -->
+    <section id="lifestyle" class="py-24 lg:py-32 bg-cabernet-deep text-cantera-sand relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter relative z-10">
+        <!-- Header + Key Numbers -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-end mb-16 reveal-up">
+          <div class="lg:col-span-7 space-y-3">
+            <span class="font-label-sm text-[11px] uppercase tracking-[0.26em] text-gold-light font-semibold block">El Primer Centro Comercial Campestre Sustentable de México</span>
+            <h2 class="font-serif text-4xl lg:text-5xl text-cantera-sand tracking-tight">
+              Lifestyle Center &amp; <span class="italic font-light text-gold-light">Esplendor by Wyndham®</span>
+            </h2>
+            <p class="font-body-md text-sm text-cantera-sand/80 font-light leading-relaxed max-w-2xl">
+              Tu fin de semana ideal; todo, sin salir de casa. Más de 30 amenidades de clase mundial activándose por fases para crear valor patrimonial y disfrute familiar desde el primer día.
+            </p>
+          </div>
+          <div class="lg:col-span-5 grid grid-cols-3 gap-4 text-center">
+            <div class="p-4 bg-white/5 hairline-dark">
+              <span class="font-serif text-3xl text-gold-light block">+30</span>
+              <span class="font-label-sm text-[9px] uppercase tracking-widest text-cantera-sand/75 mt-1 block">Amenidades</span>
+            </div>
+            <div class="p-4 bg-white/5 hairline-dark">
+              <span class="font-serif text-3xl text-gold-light block">76</span>
+              <span class="font-label-sm text-[9px] uppercase tracking-widest text-cantera-sand/75 mt-1 block">Suites Wyndham®</span>
+            </div>
+            <div class="p-4 bg-white/5 hairline-dark">
+              <span class="font-serif text-3xl text-gold-light block">80%</span>
+              <span class="font-label-sm text-[9px] uppercase tracking-widest text-cantera-sand/75 mt-1 block">Renta Propietario</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured Bento Grid of Anchor Amenities -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-8 reveal-up">
+          <!-- 1. RIXEN Cable Ski Lake (6 cols) -->
+          <div class="lg:col-span-6 relative min-h-[380px] overflow-hidden hairline-dark group cellar-shadow flex flex-col justify-end p-8">
+            <img src="https://assets.cdn.filesafe.space/ZZleTToDW7ldi8Rlm96v/media/69b1f9828cb2597a554d361c.jpg" alt="Lago Cable Ski Rixen San Miguel de Allende" class="absolute inset-0 w-full h-full object-cover arch-card-img" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+            <div class="relative z-10">
+              <span class="px-2.5 py-1 bg-gold-burnished text-cabernet-deep font-label-sm text-[9px] uppercase tracking-widest font-bold">Deporte Acuático Activo</span>
+              <h3 class="font-serif text-2xl lg:text-3xl text-cantera-sand mt-2">1er Lago Cable Ski RIXEN® del Bajío</h3>
+              <p class="font-body-sm text-xs text-cantera-sand/80 mt-2 leading-relaxed">
+                Operado con tecnología alemana Rixen Cableway de clase mundial. Espejo de agua sustentable para wakeboard, esquí acuático, kayak y club de playa campestre.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2. Hotel Esplendor by Wyndham & Branded Residences (6 cols) -->
+          <div class="lg:col-span-6 relative min-h-[380px] overflow-hidden hairline-dark group cellar-shadow flex flex-col justify-end p-8">
+            <img src="https://assets.cdn.filesafe.space/ZZleTToDW7ldi8Rlm96v/media/69b1fa2e57249bdda8485cf6.png" alt="Hotel Esplendor by Wyndham San Miguel de Allende" class="absolute inset-0 w-full h-full object-cover arch-card-img" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+            <div class="relative z-10">
+              <span class="px-2.5 py-1 bg-gold-burnished text-cabernet-deep font-label-sm text-[9px] uppercase tracking-widest font-bold">Hospitalidad Internacional • 80% Ingresos</span>
+              <h3 class="font-serif text-2xl lg:text-3xl text-cantera-sand mt-2">Hotel Esplendor by Wyndham® &amp; Villas</h3>
+              <p class="font-body-sm text-xs text-cantera-sand/80 mt-2 leading-relaxed">
+                76 habitaciones, Villas Vinícola, Villas Ecuestres, Villas Wellness y el programa <strong>Wyndham Branded Residences</strong> donde las Reservas I y II otorgan el <strong>80% de los ingresos de renta</strong> al propietario.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 Additional Lifestyle Ecosystem Modules -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 reveal-up">
+          <div class="p-6 bg-white/5 backdrop-blur-sm hairline-dark hover:bg-white/10 transition-all">
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-label-sm text-[10px] uppercase tracking-widest text-gold-light font-semibold">Ecuestre &amp; Polo</span>
+              <span class="material-symbols-outlined text-gold-light">bedroom_baby</span>
+            </div>
+            <h4 class="font-serif text-xl text-cantera-sand mb-2">Club Ecuestre de Primer Nivel</h4>
+            <p class="font-body-sm text-xs text-cantera-sand/75 leading-relaxed">
+              Equitación, Polo Arena, 100 caballerizas de lujo, fosas de rehabilitación equina, picaderos y kilómetros de senderos entre viñedos.
+            </p>
+          </div>
+
+          <div class="p-6 bg-white/5 backdrop-blur-sm hairline-dark hover:bg-white/10 transition-all">
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-label-sm text-[10px] uppercase tracking-widest text-gold-light font-semibold">Enología • 20,000 Barricas</span>
+              <span class="material-symbols-outlined text-gold-light">wine_bar</span>
+            </div>
+            <h4 class="font-serif text-xl text-cantera-sand mb-2">Vinícola de 6,000 m² &amp; Tasting Rooms</h4>
+            <p class="font-body-sm text-xs text-cantera-sand/75 leading-relaxed">
+              Bodega productora de nuestros vinos Medalla de Oro, salas de cata privadas, talleres de viticultura y resguardo de etiquetas de propietarios.
+            </p>
+          </div>
+
+          <div class="p-6 bg-white/5 backdrop-blur-sm hairline-dark hover:bg-white/10 transition-all">
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-label-sm text-[10px] uppercase tracking-widest text-gold-light font-semibold">Gastronomía &amp; Eventos</span>
+              <span class="material-symbols-outlined text-gold-light">restaurant</span>
+            </div>
+            <h4 class="font-serif text-xl text-cantera-sand mb-2">Restaurantes, Capilla &amp; Gran Salón</h4>
+            <p class="font-body-sm text-xs text-cantera-sand/75 leading-relaxed">
+              Restaurantes de autor "de la granja a la mesa", terrazas y bares, Capilla consagrada para bodas y Salón de Eventos con capacidad para 1,000 personas.
+            </p>
+          </div>
+
+          <div class="p-6 bg-white/5 backdrop-blur-sm hairline-dark hover:bg-white/10 transition-all">
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-label-sm text-[10px] uppercase tracking-widest text-gold-light font-semibold">Sport &amp; Raqueta</span>
+              <span class="material-symbols-outlined text-gold-light">sports_tennis</span>
+            </div>
+            <h4 class="font-serif text-xl text-cantera-sand mb-2">Sport Center, Pádel &amp; Tenis</h4>
+            <p class="font-body-sm text-xs text-cantera-sand/75 leading-relaxed">
+              Canchas profesionales de tenis y pádel, centro cross-camp, gimnasio panorámico y circuito deportivo rodeado de naturaleza.
+            </p>
+          </div>
+
+          <div class="p-6 bg-white/5 backdrop-blur-sm hairline-dark hover:bg-white/10 transition-all">
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-label-sm text-[10px] uppercase tracking-widest text-gold-light font-semibold">Arte &amp; Comercio Boutique</span>
+              <span class="material-symbols-outlined text-gold-light">palette</span>
+            </div>
+            <h4 class="font-serif text-xl text-cantera-sand mb-2">Centro Cultural &amp; Galería de Arte</h4>
+            <p class="font-body-sm text-xs text-cantera-sand/75 leading-relaxed">
+              Galerías de arte, talleres escultóricos, tiendas boutique, servicios bancarios y oficinas de Keller Williams México dentro del desarrollo.
+            </p>
+          </div>
+
+          <div class="p-6 bg-white/5 backdrop-blur-sm hairline-dark hover:bg-white/10 transition-all">
+            <div class="flex items-center justify-between mb-3">
+              <span class="font-label-sm text-[10px] uppercase tracking-widest text-gold-light font-semibold">Agricultura Regenerativa</span>
+              <span class="material-symbols-outlined text-gold-light">psychiatry</span>
+            </div>
+            <h4 class="font-serif text-xl text-cantera-sand mb-2">Granja Orgánica “La Santa Tierra”</h4>
+            <p class="font-body-sm text-xs text-cantera-sand/75 leading-relaxed">
+              Huertos orgánicos de cosecha diaria, talleres familiares de permacultura, spa holístico y glamping de contemplación estelar.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         8. SECTION: MASTERPLAN INTERACTIVO EN TIEMPO REAL (402 LOTES • 9 RESERVAS)
+         ====================================================================== -->
+    <section id="masterplan" class="py-24 lg:py-32 bg-slate-charcoal text-cantera-sand relative border-t border-gold-burnished/30">
+      <div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter">
+        <!-- Header -->
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10 reveal-up">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 bg-gold-burnished/20 text-gold-light font-label-sm text-[10px] uppercase tracking-[0.22em] mb-3 hairline-dark">
+              <span class="w-2 h-2 rounded-circle-exception bg-green-400 animate-ping"></span>
+              <span>Inventario Conectado en Tiempo Real • 105 Hectáreas</span>
+            </div>
+            <h2 class="font-serif text-4xl lg:text-5xl text-cantera-sand tracking-tight">
+              Masterplan Interactivo: <span class="italic font-light text-gold-light">9 Reservas Vinícolas</span>
+            </h2>
+            <p class="font-body-md text-sm text-cantera-sand/75 mt-2 max-w-2xl font-light">
+              Haz clic directamente sobre cualquiera de las 9 Reservas en el plano maestro o selecciona una pestaña para consultar lote por lote su superficie en m², precio en USD y MXN y estatus actualizado.
+            </p>
+          </div>
+
+          <div class="flex flex-col items-start lg:items-end gap-2">
+            <span id="mp-global-summary" class="font-serif text-xl text-gold-light">Cargando disponibilidad de 402 lotes...</span>
+            <div class="flex items-center gap-3 font-label-sm text-[9px] uppercase tracking-widest text-cantera-sand/70">
+              <span class="flex items-center gap-1.5"><i class="w-2.5 h-2.5 inline-block bg-[#4A8C41]"></i>Alta Disponibilidad</span>
+              <span class="flex items-center gap-1.5"><i class="w-2.5 h-2.5 inline-block bg-[#C9A84C]"></i>Disponibilidad Media</span>
+              <span class="flex items-center gap-1.5"><i class="w-2.5 h-2.5 inline-block bg-[#8B2737]"></i>Últimos / Vendidos</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reserve Quick Selector Tabs (9 Reservas) -->
+        <div id="mp-reserva-tabs" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5 mb-8 reveal-up"></div>
+
+        <!-- Main Interactive Split: Left SVG Masterplan + Right Live Lot Inspector -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch reveal-up">
+          <!-- Left: Interactive Vector SVG Map Over Official Masterplan Render -->
+          <div class="lg:col-span-7 bg-black/50 hairline-dark relative overflow-hidden flex flex-col justify-between min-h-[540px] cellar-shadow">
+            <!-- Top Map Controls -->
+            <div class="p-4 bg-black/60 backdrop-blur-md border-b border-gold-burnished/20 flex items-center justify-between z-20">
+              <span class="font-label-sm text-[10px] uppercase tracking-[0.2em] text-gold-light flex items-center gap-2">
+                <span class="material-symbols-outlined text-sm">touch_app</span>
+                <span>Toca una Reserva en el Mapa (I a IX)</span>
+              </span>
+              <div class="flex items-center gap-1.5">
+                <button type="button" onclick="window.zoomMasterplan(0.3)" class="w-8 h-8 rounded-circle-exception bg-white/10 hover:bg-gold-burnished hover:text-cabernet-deep text-cantera-sand flex items-center justify-center transition-colors" title="Acercar">
+                  <span class="material-symbols-outlined text-base">add</span>
+                </button>
+                <button type="button" onclick="window.zoomMasterplan(-0.3)" class="w-8 h-8 rounded-circle-exception bg-white/10 hover:bg-gold-burnished hover:text-cabernet-deep text-cantera-sand flex items-center justify-center transition-colors" title="Alejar">
+                  <span class="material-symbols-outlined text-base">remove</span>
+                </button>
+                <button type="button" onclick="window.zoomMasterplan(0)" class="px-2.5 h-8 bg-white/10 hover:bg-gold-burnished hover:text-cabernet-deep text-cantera-sand font-label-sm text-[9px] uppercase tracking-wider transition-colors" title="Restablecer vista">
+                  100%
+                </button>
+              </div>
+            </div>
+
+            <!-- Interactive SVG Container -->
+            <div class="relative flex-1 overflow-auto flex items-center justify-center p-2 bg-[#140B0E]">
+              <svg id="masterplan-svg-el" class="masterplan-svg w-full h-auto max-h-[640px] transition-transform duration-300 origin-center" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+                <image href="https://assets.cdn.filesafe.space/ZZleTToDW7ldi8Rlm96v/media/69af371613dc9ccc76485852.png" x="0" y="0" width="1000" height="1000" preserveAspectRatio="xMidYMid meet" />
+
+                <!-- Reserva I (Merlot) -->
+                <path id="z-I" class="zone" data-cursor="RESERVA I" d="M324.64,160.98l-63.36,119.8,322.56,185.35s44.86-34.83,38.59-69.02c-6.28-34.19-5.45-95.19-5.45-95.19l-292.33-140.93Z" onclick="window.selectMasterplanReserva('I')" />
+                <text class="zlabel" x="388" y="308" text-anchor="middle">I</text>
+                <text class="zlabel-sub" x="388" y="322" text-anchor="middle">RESERVA I</text>
+
+                <!-- Reserva II (Cabernet Sauvignon) -->
+                <path id="z-II" class="zone" data-cursor="RESERVA II" d="M637.85,314.79s-7.34,99.06,5.96,128.87,40.36,38.86,43.11,56.35l212.79-2.23v-60.08l-261.86-122.9Z" onclick="window.selectMasterplanReserva('II')" />
+                <text class="zlabel" x="768" y="412" text-anchor="middle">II</text>
+                <text class="zlabel-sub" x="768" y="426" text-anchor="middle">RESERVA II</text>
+
+                <!-- Reserva III (Chardonnay) -->
+                <path id="z-III" class="zone" data-cursor="RESERVA III" d="M257.21,280.16l-28.89,53.66,32.95,147.9s13.14,13.76,48.91,13.76,224.25-3.44,242.83-8.94,35.08-17.2,35.08-17.2l-330.88-189.17Z" onclick="window.selectMasterplanReserva('III')" />
+                <text class="zlabel" x="328" y="415" text-anchor="middle">III</text>
+                <text class="zlabel-sub" x="328" y="429" text-anchor="middle">RESERVA III</text>
+
+                <!-- Reserva IV (Malbec) -->
+                <polygon id="z-IV" class="zone" data-cursor="RESERVA IV" points="672.7,516.8 885.27,659.2 899.71,497.77 686.92,500 672.7,516.8" onclick="window.selectMasterplanReserva('IV')" />
+                <text class="zlabel" x="792" y="566" text-anchor="middle">IV</text>
+                <text class="zlabel-sub" x="792" y="580" text-anchor="middle">RESERVA IV</text>
+
+                <!-- Reserva V (Cabernet Franc) -->
+                <path id="z-V" class="zone active" data-cursor="RESERVA V" d="M265.47,511.99l253.83-8.25s59.85,4.13,65.35,22.01l-275.85,190.55-43.34-204.31Z" onclick="window.selectMasterplanReserva('V')" />
+                <text class="zlabel" x="338" y="608" text-anchor="middle">V</text>
+                <text class="zlabel-sub" x="338" y="622" text-anchor="middle">RESERVA V</text>
+
+                <!-- Reserva VI (Sauvignon Blanc) -->
+                <path id="z-VI" class="zone" data-cursor="RESERVA VI" d="M626.62,722.48l-3.59-144s-10.85-45.17-38.37-52.74l-275.85,190.55,2.75,13.07,315.06-6.88Z" onclick="window.selectMasterplanReserva('VI')" />
+                <text class="zlabel" x="490" y="670" text-anchor="middle">VI</text>
+                <text class="zlabel-sub" x="490" y="684" text-anchor="middle">RESERVA VI</text>
+
+                <!-- Reserva VII (Tempranillo) -->
+                <path id="z-VII" class="zone" data-cursor="RESERVA VII" d="M743.56,785.77l-70.85-23.39s-24.92-11.27-25.45-33.02c-.1-4.13-.4-26.17-.4-26.17l-1.67-124.71s9.1-40.52,30.69-59.56l209.39,140.27-99.06,40.59-38.52,16.51-21.32,22.01,17.2,47.46Z" onclick="window.selectMasterplanReserva('VII')" />
+                <text class="zlabel" x="746" y="678" text-anchor="middle">VII</text>
+                <text class="zlabel-sub" x="746" y="692" text-anchor="middle">RESERVA VII</text>
+
+                <!-- Reserva VIII (Pinot Noir) -->
+                <path id="z-VIII" class="zone" data-cursor="RESERVA VIII" d="M308.81,737.62l295.8,210.5-6.19-156.84,24.61-11.01s-34.93-35.77,3.59-50.9h-315.06l-2.75,8.25Z" onclick="window.selectMasterplanReserva('VIII')" />
+                <text class="zlabel" x="428" y="818" text-anchor="middle">VIII</text>
+                <text class="zlabel-sub" x="428" y="832" text-anchor="middle">RESERVA VIII</text>
+
+                <!-- Reserva IX (Syrah) -->
+                <polygon id="z-IX" class="zone" data-cursor="RESERVA IX" points="180.17,258.15 281.29,719.73 15.07,529.18 180.17,258.15" onclick="window.selectMasterplanReserva('IX')" />
+                <text class="zlabel" x="148" y="505" text-anchor="middle">IX</text>
+                <text class="zlabel-sub" x="148" y="519" text-anchor="middle">RESERVA IX</text>
+
+                <!-- Amenity Zones -->
+                <polygon class="zone inactive" pointer-events="none" points="623.02,425.31 560.35,495.48 635.83,565.64 686.92,500 623.02,425.31" />
+                <text class="zlabel-sub" x="623" y="494" text-anchor="middle" style="font-size:6.5px;fill:rgba(255,255,255,0.65)">SPORT CENTER</text>
+
+                <polygon class="zone inactive" pointer-events="none" points="398,35.27 324.64,160.98 904.3,441.13 913.93,294.61 395.25,49.72 398,35.27" />
+                <text class="zlabel-sub" x="658" y="195" text-anchor="middle" style="font-size:6.5px;fill:rgba(255,255,255,0.65)">LIFESTYLE CENTER &amp; CABLE SKI</text>
+
+                <polygon class="zone inactive" pointer-events="none" points="245.29,147.4 198.51,225.13 270.74,258.15 314.77,179.64 245.29,147.4" />
+                <text class="zlabel-sub" x="257" y="204" text-anchor="middle" style="font-size:5.5px;fill:rgba(255,255,255,0.65)">VILLAS ECUESTRES</text>
+
+                <polygon class="zone inactive" pointer-events="none" points="669.04,765.13 678.67,866.25 694.49,924.04 717.19,932.98 754.34,871.07 747.46,791.27 672.7,762.38 669.04,765.13" />
+                <text class="zlabel-sub" x="712" y="846" text-anchor="middle" style="font-size:6.5px;fill:rgba(255,255,255,0.65)">WELLNESS</text>
+
+                <polygon class="zone inactive" pointer-events="none" points="603.69,847.68 672.7,851.12 694.49,924.04 717.19,932.98 683.48,989.39 629.83,963.93 604.6,948.11 603.69,844.93" />
+                <text class="zlabel-sub" x="648" y="918" text-anchor="middle" style="font-size:6.5px;fill:rgba(255,255,255,0.65)">GRANJA ORGÁNICA</text>
+              </svg>
+            </div>
+
+            <!-- Bottom Map Bar -->
+            <div class="p-4 bg-black/60 border-t border-gold-burnished/20 flex flex-wrap items-center justify-between gap-2 text-xs">
+              <span class="font-body-sm text-cantera-sand/70">Tipo de cambio referencial hoy: <strong id="mp-tc-label" class="text-gold-light">$18.72 MXN</strong></span>
+              <span class="font-label-sm text-[9px] uppercase tracking-widest text-gold-light">Incluye 120 botellas anuales en la compra de cualquier lote</span>
+            </div>
+          </div>
+
+          <!-- Right: Live Reserve & Lot-by-Lot Inspector Panel -->
+          <div class="lg:col-span-5 bg-cabernet-deep/90 hairline-dark flex flex-col justify-between p-6 lg:p-8 cellar-shadow">
+            <div>
+              <div class="pb-5 mb-5 border-b border-gold-burnished/25">
+                <span class="font-label-sm text-[10px] uppercase tracking-[0.22em] text-gold-light block">Detalle de Reserva Seleccionada</span>
+                <h3 id="mp-panel-title" class="font-serif text-3xl text-cantera-sand mt-1">Reserva V • Cabernet Franc</h3>
+                <p id="mp-panel-sub" class="font-body-sm text-xs text-cantera-sand/75 mt-1">Etapa 2 • 47 Lotes Residenciales • 52,100 m² Totales</p>
+
+                <!-- 3 Live Counters for Selected Reserve -->
+                <div class="grid grid-cols-3 gap-3 mt-5 text-center">
+                  <div class="p-3 bg-black/35 hairline-dark">
+                    <span id="mp-stat-disp" class="font-serif text-2xl text-[#9EE493] block">29</span>
+                    <span class="font-label-sm text-[9px] uppercase tracking-widest text-cantera-sand/70">Disponibles</span>
+                  </div>
+                  <div class="p-3 bg-black/35 hairline-dark">
+                    <span id="mp-stat-apar" class="font-serif text-2xl text-gold-light block">2</span>
+                    <span class="font-label-sm text-[9px] uppercase tracking-widest text-cantera-sand/70">Apartados</span>
+                  </div>
+                  <div class="p-3 bg-black/35 hairline-dark">
+                    <span id="mp-stat-vend" class="font-serif text-2xl text-[#F29CA8] block">16</span>
+                    <span class="font-label-sm text-[9px] uppercase tracking-widest text-cantera-sand/70">Vendidos</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Status Filter Pills -->
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="font-label-sm text-[10px] uppercase tracking-widest text-cantera-sand/70">Filtrar Lotes:</span>
+                <div class="flex items-center gap-1.5">
+                  <button type="button" data-status="Todos" onclick="window.setMasterplanStatusFilter('Todos')" class="mp-status-filter px-2.5 py-1 bg-gold-burnished text-cabernet-deep font-label-sm text-[9px] uppercase tracking-wider font-bold">
+                    Todos
+                  </button>
+                  <button type="button" data-status="Disponible" onclick="window.setMasterplanStatusFilter('Disponible')" class="mp-status-filter px-2.5 py-1 bg-white/5 text-cantera-sand/80 font-label-sm text-[9px] uppercase tracking-wider">
+                    Disponibles
+                  </button>
+                  <button type="button" data-status="Apartado" onclick="window.setMasterplanStatusFilter('Apartado')" class="mp-status-filter px-2.5 py-1 bg-white/5 text-cantera-sand/80 font-label-sm text-[9px] uppercase tracking-wider">
+                    Apartados
+                  </button>
+                </div>
+              </div>
+
+              <!-- Scrollable Lot-by-Lot List -->
+              <div id="mp-lots-list" class="max-h-[340px] overflow-y-auto pr-1 space-y-1.5 border-y border-gold-burnished/20 py-2"></div>
+            </div>
+
+            <div class="pt-6 mt-4">
+              <a id="mp-panel-cta" href="https://wa.me/525535352057" target="_blank" rel="noopener" class="w-full py-4 bg-gold-burnished hover:bg-gold-light text-cabernet-deep font-label-sm text-xs uppercase tracking-[0.2em] font-bold transition-all flex items-center justify-center gap-2 shadow-xl">
+                <span>Solicitar Plano y Cotización de Esta Reserva</span>
+                <span class="material-symbols-outlined text-base">chat</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         9. SECTION: SAN MIGUEL DE ALLENDE & RESPALDO CORPORATIVO
+         ====================================================================== -->
+    <section class="py-24 lg:py-32 bg-surface relative">
+      <div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter">
+        <!-- San Miguel de Allende UNESCO Context -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20 reveal-up">
+          <div class="lg:col-span-6 space-y-4">
+            <div class="inline-flex items-center gap-2.5">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/World_Heritage_Logo_global.svg" alt="UNESCO World Heritage" class="h-7 w-auto opacity-80" />
+              <span class="font-label-sm text-[10px] uppercase tracking-[0.25em] text-gold-burnished font-bold">Patrimonio de la Humanidad UNESCO</span>
+            </div>
+            <h2 class="font-serif text-4xl lg:text-5xl text-primary tracking-tight leading-tight">
+              San Miguel de Allende: <br /><span class="italic font-light text-primary-container">La Ciudad que el Mundo Eligió</span>
+            </h2>
+            <p class="font-body-md text-sm text-on-surface-variant font-light leading-relaxed">
+              Votada 5 veces como la <strong>#1 Mejor Ciudad del Mundo</strong> por <em>Travel + Leisure</em> y <em>Condé Nast Traveler</em>. Estar en La Santa Vid significa gozar la paz del viñedo en el <strong>Km 9.5 de la Carretera SMA–Querétaro</strong>, a solo 12 minutos de la Parroquia de San Miguel Arcángel, restaurantes Michelin y galerías internacionales.
+            </p>
+            <div class="grid grid-cols-3 gap-4 pt-4">
+              <div class="p-4 bg-surface-container-low hairline-light text-center">
+                <span class="font-serif text-3xl text-gold-burnished block">330</span>
+                <span class="font-label-sm text-[9px] uppercase tracking-widest text-on-surface-variant mt-1 block">Días de Sol • 22°C</span>
+              </div>
+              <div class="p-4 bg-surface-container-low hairline-light text-center">
+                <span class="font-serif text-3xl text-gold-burnished block">1,910</span>
+                <span class="font-label-sm text-[9px] uppercase tracking-widest text-on-surface-variant mt-1 block">Altitud msnm</span>
+              </div>
+              <div class="p-4 bg-surface-container-low hairline-light text-center">
+                <span class="font-serif text-3xl text-gold-burnished block">9.5 km</span>
+                <span class="font-label-sm text-[9px] uppercase tracking-widest text-on-surface-variant mt-1 block">Del Centro SMA</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+            <div class="relative aspect-[4/5] overflow-hidden hairline-light cellar-shadow">
+              <img src="https://assets.cdn.filesafe.space/ZZleTToDW7ldi8Rlm96v/media/69c70b7a7115eaf55fbec1cf.jpeg" alt="San Miguel de Allende Mejor Ciudad del Mundo" class="w-full h-full object-cover" />
+              <div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-black/85 to-transparent">
+                <span class="font-label-sm text-[9px] uppercase tracking-widest text-gold-light block">5 Veces #1 del Mundo</span>
+                <span class="font-serif text-base text-cantera-sand">Travel + Leisure &amp; Condé Nast</span>
+              </div>
+            </div>
+            <div class="flex flex-col justify-between gap-4">
+              <div class="p-6 bg-cabernet-deep text-cantera-sand hairline-dark flex-1 flex flex-col justify-center">
+                <span class="font-label-sm text-[9px] uppercase tracking-widest text-gold-light block mb-2">Conectividad Estratégica</span>
+                <ul class="space-y-3 font-body-sm text-xs text-cantera-sand/85">
+                  <li class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-gold-light text-base">near_me</span>
+                    <span><strong>12 min</strong> • Centro Histórico SMA</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-gold-light text-base">flight_takeoff</span>
+                    <span><strong>45 min</strong> • Aeropuerto Intercontinental QRO</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-gold-light text-base">flight</span>
+                    <span><strong>1 hr 20 min</strong> • Aeropuerto del Bajío (BJX)</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-gold-light text-base">directions_car</span>
+                    <span><strong>3.5 hrs</strong> • Ciudad de México</span>
+                  </li>
+                </ul>
+                <a href="https://www.google.com/maps/search/?api=1&query=Google&query_place_id=ChIJLzMNh8VTK4QRvUp46WnivF4" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-1.5 font-label-sm text-[10px] uppercase tracking-widest text-gold-light hover:underline font-bold">
+                  <span>Abrir Ubicación en Google Maps</span>
+                  <span class="material-symbols-outlined text-xs">open_in_new</span>
+                </a>
+              </div>
+              <div class="relative h-44 overflow-hidden hairline-light">
+                <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FZZleTToDW7ldi8Rlm96v%2Fimages%2FvPuPPjpcREJe6csgOfiT%2FChIJLzMNh8VTK4QRvUp46WnivF4%2Fmap-KQ0Kwt_6Y3.jpg?alt=media&v=cp5ouo" alt="Mapa Corralejo de Arriba Km 9.5 SMA" class="w-full h-full object-cover" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Institutional Backing & Strategic Allies -->
+        <div class="pt-16 border-t border-outline-variant/40 reveal-up">
+          <div class="text-center max-w-2xl mx-auto mb-12">
+            <span class="font-label-sm text-[10px] uppercase tracking-[0.25em] text-gold-burnished font-bold block mb-1">Certeza Jurídica &amp; Alianzas Globales</span>
+            <h3 class="font-serif text-3xl lg:text-4xl text-primary">Las Firmas Detrás de La Santa Vid</h3>
+            <p class="font-body-sm text-xs text-on-surface-variant mt-2">
+              Respaldo institucional de firmas líderes en desarrollo patrimonial, comercialización global, arquitectura de autor, ingeniería civil y hospitalidad internacional.
+            </p>
+          </div>
+
+          <!-- Primary Institutional Cards on Warm Gray / Stone Surface (Stone Edition Logos) -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
+            <div class="p-8 bg-surface-container-low hairline-light flex flex-col sm:flex-row items-start sm:items-center gap-7 group hover:bg-surface-container transition-colors">
+              <div class="w-40 h-28 bg-surface-container/90 hairline-light px-5 py-4 flex items-center justify-center shrink-0 shadow-sm group-hover:border-gold-burnished/40 transition-colors">
+                <img src="assets/logo-inoba-stone.png" alt="INOBA Desarrollos" class="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105" />
+              </div>
+              <div>
+                <span class="font-label-sm text-[9px] uppercase tracking-widest text-gold-burnished font-bold">Desarrollador Patrimonial • Desde 2008</span>
+                <h4 class="font-serif text-2xl text-primary font-semibold mt-0.5">INOBA Desarrollos</h4>
+                <p class="font-body-sm text-xs text-on-surface-variant leading-relaxed mt-1.5">
+                  <em>Inmobiliaria Operadora Baluarte, S.A.P.I. de C.V.</em> Fundada en Querétaro en 2008, especializada en desarrollos residenciales y campestres de alta plusvalía con total certeza jurídica.
+                </p>
+              </div>
+            </div>
+
+            <div class="p-8 bg-surface-container-low hairline-light flex flex-col sm:flex-row items-start sm:items-center gap-7 group hover:bg-surface-container transition-colors">
+              <div class="w-40 h-28 bg-surface-container/90 hairline-light px-5 py-4 flex items-center justify-center shrink-0 shadow-sm group-hover:border-gold-burnished/40 transition-colors">
+                <img src="assets/logo-kw-stone.png" alt="Keller Williams México" class="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105" />
+              </div>
+              <div>
+                <span class="font-label-sm text-[9px] uppercase tracking-widest text-gold-burnished font-bold">Comercialización Internacional</span>
+                <h4 class="font-serif text-2xl text-primary font-semibold mt-0.5">Keller Williams México</h4>
+                <p class="font-body-sm text-xs text-on-surface-variant leading-relaxed mt-1.5">
+                  La franquicia inmobiliaria más grande del mundo con más de 200,000 asociados globales, 2,500 en México y 350 en Querétaro y San Miguel de Allende.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Secondary Architectural & Hospitality Cards on Gray Surface (Stone Edition Logos) -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+            <div class="p-6 bg-surface-container-low hairline-light flex items-center gap-5 group hover:bg-surface-container transition-colors">
+              <div class="w-28 h-20 bg-surface-container/90 hairline-light p-3 flex items-center justify-center shrink-0">
+                <img src="assets/logo-artigas-stone.png" alt="Artigas Arquitectos" class="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105" />
+              </div>
+              <div>
+                <span class="font-label-sm text-[8px] uppercase tracking-widest text-gold-burnished font-bold block">Masterplan &amp; Residencias</span>
+                <h5 class="font-serif text-lg text-primary font-semibold">Artigas Arquitectos</h5>
+                <p class="font-body-sm text-[11px] text-on-surface-variant leading-snug mt-0.5">Firma icónica de arquitectura mexicana contemporánea y diseño de las 8 residencias de autor.</p>
+              </div>
+            </div>
+
+            <div class="p-6 bg-surface-container-low hairline-light flex items-center gap-5 group hover:bg-surface-container transition-colors">
+              <div class="w-28 h-20 bg-surface-container/90 hairline-light p-3 flex items-center justify-center shrink-0">
+                <img src="assets/logo-gaadisa-stone.png" alt="GAADISA Construcción" class="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105" />
+              </div>
+              <div>
+                <span class="font-label-sm text-[8px] uppercase tracking-widest text-gold-burnished font-bold block">Urbanización &amp; Obra Civil</span>
+                <h5 class="font-serif text-lg text-primary font-semibold">GAADISA Construcción</h5>
+                <p class="font-body-sm text-[11px] text-on-surface-variant leading-snug mt-0.5">Ingeniería, infraestructura hidráulica sustentable y ejecución de alto estándar.</p>
+              </div>
+            </div>
+
+            <div class="p-6 bg-surface-container-low hairline-light flex items-center gap-5 group hover:bg-surface-container transition-colors">
+              <div class="w-28 h-20 bg-surface-container/90 hairline-light p-3 flex items-center justify-center shrink-0">
+                <img src="assets/logo-esplendor-stone.png" alt="Esplendor by Wyndham" class="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105" />
+              </div>
+              <div>
+                <span class="font-label-sm text-[8px] uppercase tracking-widest text-gold-burnished font-bold block">Operación Hotelera Boutique</span>
+                <h5 class="font-serif text-lg text-primary font-semibold">Esplendor by Wyndham®</h5>
+                <p class="font-body-sm text-[11px] text-on-surface-variant leading-snug mt-0.5">76 suites y programa Branded Residences con 80% de retorno por renta al propietario.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wine-Colored Institutional Medallion Strip (Champagne Ivory & Antique Gold Logos) -->
+          <div class="bg-cabernet-deep px-8 py-10 hairline-dark cellar-shadow relative overflow-hidden">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(201,168,76,0.12),transparent_70%)] pointer-events-none"></div>
+            <div class="relative z-10 flex flex-col items-center mb-8">
+              <span class="font-label-sm text-[9px] uppercase tracking-[0.3em] text-gold-light/90">Sello de Excelencia &amp; Respaldo Corporativo</span>
+              <div class="w-16 h-px bg-gold-burnished/40 mt-2"></div>
+            </div>
+            <div class="relative z-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-6 items-center justify-items-center">
+              <div class="flex flex-col items-center gap-3 group">
+                <div class="h-14 flex items-center justify-center px-3">
+                  <img src="assets/logo-inoba-wine.png" alt="INOBA Desarrollos" class="max-h-14 w-auto object-contain opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300" />
+                </div>
+                <span class="font-label-sm text-[8px] uppercase tracking-[0.22em] text-cantera-sand/60 group-hover:text-gold-light transition-colors">Desarrollador</span>
+              </div>
+
+              <div class="flex flex-col items-center gap-3 group">
+                <div class="h-14 flex items-center justify-center px-3">
+                  <img src="assets/logo-kw-wine.png" alt="Keller Williams México" class="max-h-11 w-auto object-contain opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300" />
+                </div>
+                <span class="font-label-sm text-[8px] uppercase tracking-[0.22em] text-cantera-sand/60 group-hover:text-gold-light transition-colors">Comercialización</span>
+              </div>
+
+              <div class="flex flex-col items-center gap-3 group">
+                <div class="h-14 flex items-center justify-center px-3">
+                  <img src="assets/logo-artigas-wine.png" alt="Artigas Arquitectos" class="max-h-12 w-auto object-contain opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300" />
+                </div>
+                <span class="font-label-sm text-[8px] uppercase tracking-[0.22em] text-cantera-sand/60 group-hover:text-gold-light transition-colors">Arquitectura de Autor</span>
+              </div>
+
+              <div class="flex flex-col items-center gap-3 group">
+                <div class="h-14 flex items-center justify-center px-3">
+                  <img src="assets/logo-gaadisa-wine.png" alt="GAADISA Construcción" class="max-h-10 w-auto object-contain opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300" />
+                </div>
+                <span class="font-label-sm text-[8px] uppercase tracking-[0.22em] text-cantera-sand/60 group-hover:text-gold-light transition-colors">Construcción &amp; Obra</span>
+              </div>
+
+              <div class="col-span-2 sm:col-span-1 flex flex-col items-center gap-3 group">
+                <div class="h-14 flex items-center justify-center px-3">
+                  <img src="assets/logo-esplendor-wine.png" alt="Esplendor by Wyndham" class="max-h-10 w-auto object-contain opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300" />
+                </div>
+                <span class="font-label-sm text-[8px] uppercase tracking-[0.22em] text-cantera-sand/60 group-hover:text-gold-light transition-colors">Hospitalidad Boutique</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         10. SECTION: PRIVATE CONCIERGE DESK & AGENDAMIENTO VIP
+         ====================================================================== -->
+    <section id="contacto-vip" class="py-24 lg:py-32 bg-cantera-cream relative">
+      <div class="max-w-5xl mx-auto px-gutter-mobile lg:px-gutter">
+        <div class="bg-surface hairline-light cellar-shadow grid grid-cols-1 lg:grid-cols-12 overflow-hidden reveal-up">
+          <!-- Left Wine-Toned Concierge Invitation -->
+          <div class="lg:col-span-5 bg-cabernet-deep text-cantera-sand p-8 lg:p-12 flex flex-col justify-between relative overflow-hidden">
+            <div>
+              <span class="font-label-sm text-[10px] uppercase tracking-[0.26em] text-gold-light block mb-2">Private Concierge Desk</span>
+              <h2 class="font-serif text-3xl lg:text-4xl text-cantera-sand leading-tight mb-4">
+                Agenda tu Visita Privada &amp; Cata en el Viñedo
+              </h2>
+              <p class="font-body-sm text-xs text-cantera-sand/80 leading-relaxed mb-8">
+                Recorre en privado las 105 hectáreas, conoce la Casa Muestra <em>Renacer</em> y las residencias <em>Plenitud e Inspiración</em>, degusta nuestro vino Medalla de Oro y recibe asesoría patrimonial confidencial.
+              </p>
+
+              <div class="space-y-4 font-body-sm text-xs text-cantera-sand/90">
+                <div class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-gold-light text-lg">pin_drop</span>
+                  <span>Carretera San Miguel de Allende – Querétaro Km 9.5, Corralejo de Arriba, C.P. 37700, Gto.</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-gold-light text-lg">call</span>
+                  <a href="tel:+524151159136" class="hover:text-gold-light transition-colors">+52 (415) 115 9136</a>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-gold-light text-lg">mail</span>
+                  <a href="mailto:contacto@lasantavid.com.mx" class="hover:text-gold-light transition-colors">contacto@lasantavid.com.mx</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-8 mt-8 border-t border-gold-burnished/25">
+              <span class="font-label-sm text-[9px] uppercase tracking-widest text-gold-light block mb-2">Atención Inmediata vía WhatsApp</span>
+              <a href="https://wa.me/525535352057?text=Hola%2C%20deseo%20agendar%20una%20visita%20privada%20y%20cata%20en%20La%20Santa%20Vid." target="_blank" rel="noopener" class="w-full py-3.5 bg-gold-burnished hover:bg-gold-light text-cabernet-deep font-label-sm text-[10px] uppercase tracking-[0.2em] font-bold transition-all flex items-center justify-center gap-2">
+                <span class="material-symbols-outlined text-base">chat</span>
+                <span>Iniciar Chat con Concierge VIP</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Architectural Form -->
+          <div class="lg:col-span-7 p-8 lg:p-12">
+            <form id="vip-concierge-form" class="space-y-6">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="vip-name" class="font-label-sm text-[10px] uppercase tracking-[0.2em] text-primary font-bold block mb-2">Nombre Completo *</label>
+                  <input id="vip-name" type="text" required placeholder="Ej. Alejandro Gómez Valdés" class="w-full bg-surface-container-low border-b border-primary/30 focus:border-gold-burnished px-3.5 py-3 font-body-sm text-sm text-on-surface focus:outline-none transition-colors" />
+                </div>
+                <div>
+                  <label for="vip-phone" class="font-label-sm text-[10px] uppercase tracking-[0.2em] text-primary font-bold block mb-2">Teléfono (WhatsApp) *</label>
+                  <input id="vip-phone" type="tel" required placeholder="+52 (55) 0000 0000" class="w-full bg-surface-container-low border-b border-primary/30 focus:border-gold-burnished px-3.5 py-3 font-body-sm text-sm text-on-surface focus:outline-none transition-colors" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="vip-email" class="font-label-sm text-[10px] uppercase tracking-[0.2em] text-primary font-bold block mb-2">Correo Electrónico *</label>
+                  <input id="vip-email" type="email" required placeholder="inversionista@dominio.com" class="w-full bg-surface-container-low border-b border-primary/30 focus:border-gold-burnished px-3.5 py-3 font-body-sm text-sm text-on-surface focus:outline-none transition-colors" />
+                </div>
+                <div>
+                  <label for="vip-horizon" class="font-label-sm text-[10px] uppercase tracking-[0.2em] text-primary font-bold block mb-2">Horizonte de Decisión *</label>
+                  <select id="vip-horizon" required class="w-full bg-surface-container-low border-b border-primary/30 focus:border-gold-burnished px-3.5 py-3 font-body-sm text-sm text-on-surface focus:outline-none transition-colors">
+                    <option value="Inmediato (Este mes)">Inmediato (Este mes)</option>
+                    <option value="Corto Plazo (1 a 3 meses)">Corto Plazo (1 a 3 meses)</option>
+                    <option value="Mediano Plazo (3 a 6 meses)">Mediano Plazo (3 a 6 meses)</option>
+                    <option value="Exploratorio Patrimonial">Exploratorio Patrimonial</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="vip-interest" class="font-label-sm text-[10px] uppercase tracking-[0.2em] text-primary font-bold block mb-2">Opción de Inversión de Interés *</label>
+                <select id="vip-interest" required class="w-full bg-surface-container-low border-b border-primary/30 focus:border-gold-burnished px-3.5 py-3 font-body-sm text-sm text-on-surface focus:outline-none transition-colors">
+                  <option value="Lotes Residenciales ($400 USD/m² • 120 botellas/año)">Lotes Residenciales entre Viñedos ($400 USD/m² • 120 botellas/año)</option>
+                  <option value="Residencias de Autor Artigas (Desde $9.3 MDP)">Residencias de Autor Artigas Arquitectos (Desde $9.3 MDP)</option>
+                  <option value="Modelo Fractional 1/8 (Desde $2.95 MDP)">Modelo Fractional 1/8 Casa Inspiración / Plenitud (Desde $2.95 MDP)</option>
+                  <option value="Programa Wyndham Branded Residences (80% Renta)">Programa Wyndham® Branded Residences (80% Renta)</option>
+                  <option value="Membresía Familiar Fullness ($500,000 MXN)">Membresía Familiar Fullness No Residentes ($500,000 MXN)</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="vip-notes" class="font-label-sm text-[10px] uppercase tracking-[0.2em] text-primary font-bold block mb-2">Requerimientos para su Visita o Cata</label>
+                <textarea id="vip-notes" rows="3" placeholder="Indíquenos fecha tentativa de visita o si desea recibir primero el dossier de algún modelo específico..." class="w-full bg-surface-container-low border-b border-primary/30 focus:border-gold-burnished px-3.5 py-3 font-body-sm text-sm text-on-surface focus:outline-none transition-colors"></textarea>
+              </div>
+
+              <div class="flex items-start gap-2.5">
+                <input id="vip-privacy" type="checkbox" required class="mt-1 accent-primary-container" />
+                <label for="vip-privacy" class="font-body-sm text-xs text-on-surface-variant">
+                  He leído y acepto el <a href="https://lasantavid.com.mx/privacidad" target="_blank" rel="noopener" class="text-gold-burnished underline">Aviso de Privacidad</a> y autorizo el contacto de un Concierge Patrimonial de La Santa Vid.
+                </label>
+              </div>
+
+              <button type="submit" class="w-full py-4 bg-primary-container hover:bg-cabernet-deep text-cantera-sand font-label-lg text-xs uppercase tracking-[0.2em] font-bold transition-all shadow-xl flex items-center justify-center gap-2">
+                <span>Confirmar Cita &amp; Solicitar Dossier Confidencial</span>
+                <span class="material-symbols-outlined text-base">send</span>
+              </button>
+
+              <div id="vip-form-feedback" class="hidden p-4 bg-cantera-cream hairline-light text-primary font-body-sm text-xs text-center">
+                ¡Solicitud registrada! Abriendo enlace directo con su Concierge VIP en WhatsApp...
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       FOOTER INSTITUCIONAL
+       ======================================================================== -->
+  <footer class="w-full bg-smoked-noir text-cantera-sand border-t border-gold-burnished/25">
+    <div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="https://assets.cdn.filesafe.space/ZZleTToDW7ldi8Rlm96v/media/b2c5040c-1bd2-4176-9369-ddbfdd56bc5a.png" alt="La Santa Vid" class="h-11 w-auto object-contain" />
+            <div>
+              <span class="font-serif text-xl text-cantera-sand block leading-none">LA SANTA VID</span>
+              <span class="font-label-sm text-[9px] uppercase tracking-[0.25em] text-gold-light block mt-1">San Miguel de Allende • Guanajuato</span>
+            </div>
+          </div>
+          <p class="font-serif italic text-lg text-gold-light/90 font-light">
+            “La primera reserva residencial Fullness de México.”
+          </p>
+          <p class="font-body-sm text-xs text-cantera-sand/65 max-w-sm leading-relaxed">
+            105 hectáreas, 9 reservas vinícolas, 402 lotes residenciales, 11 viñedos productivos, 120 botellas anuales incluidas de por vida y más de 30 amenidades desarrolladas por INOBA Desarrollos en alianza con Keller Williams México y Artigas Arquitectos.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://www.instagram.com/lasantavid/" target="_blank" rel="noopener" class="px-3.5 py-2 bg-white/5 hover:bg-gold-burnished hover:text-cabernet-deep hairline-dark font-label-sm text-[9px] uppercase tracking-widest transition-colors">Instagram</a>
+            <a href="https://www.youtube.com/@LaSantaVidSMA" target="_blank" rel="noopener" class="px-3.5 py-2 bg-white/5 hover:bg-gold-burnished hover:text-cabernet-deep hairline-dark font-label-sm text-[9px] uppercase tracking-widest transition-colors">YouTube</a>
+            <a href="https://www.facebook.com/lasantavidmx" target="_blank" rel="noopener" class="px-3.5 py-2 bg-white/5 hover:bg-gold-burnished hover:text-cabernet-deep hairline-dark font-label-sm text-[9px] uppercase tracking-widest transition-colors">Facebook</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-label-sm text-[10px] uppercase tracking-[0.22em] text-gold-light font-bold mb-4">Inversión</h4>
+          <ul class="space-y-2.5 font-body-sm text-xs text-cantera-sand/75">
+            <li><a href="#masterplan" class="hover:text-gold-light transition-colors">Lotes Residenciales ($400 USD/m²)</a></li>
+            <li><a href="#residencias" class="hover:text-gold-light transition-colors">Residencias Artigas (Desde $9.3 MDP)</a></li>
+            <li><a href="#residencias" class="hover:text-gold-light transition-colors">Modelo Fractional 1/8 ($2.95 MDP)</a></li>
+            <li><a href="#lifestyle" class="hover:text-gold-light transition-colors">Wyndham® Branded Residences</a></li>
+            <li><a href="#inversion" class="hover:text-gold-light transition-colors">Membresía Fullness No Residentes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-label-sm text-[10px] uppercase tracking-[0.22em] text-gold-light font-bold mb-4">Experiencias</h4>
+          <ul class="space-y-2.5 font-body-sm text-xs text-cantera-sand/75">
+            <li><a href="#enologia" class="hover:text-gold-light transition-colors">Centro Enológico (6,000 m²)</a></li>
+            <li><a href="#enologia" class="hover:text-gold-light transition-colors">120 Botellas Anuales de por Vida</a></li>
+            <li><a href="#lifestyle" class="hover:text-gold-light transition-colors">Lago Cable Ski RIXEN®</a></li>
+            <li><a href="#lifestyle" class="hover:text-gold-light transition-colors">Club Ecuestre &amp; Polo Arena</a></li>
+            <li><a href="#cinema" class="hover:text-gold-light transition-colors">Vendimia “La Santa Cosecha”</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-label-sm text-[10px] uppercase tracking-[0.22em] text-gold-light font-bold mb-4">Ubicación &amp; Contacto</h4>
+          <ul class="space-y-2.5 font-body-sm text-xs text-cantera-sand/75">
+            <li>Carretera SMA – Querétaro Km 9.5, Corralejo de Arriba, 37700 San Miguel de Allende, Gto.</li>
+            <li>Tel: <a href="tel:+524151159136" class="text-gold-light">+52 415 115 9136</a></li>
+            <li>WhatsApp VIP: <a href="https://wa.me/525535352057" target="_blank" rel="noopener" class="text-gold-light">+52 55 3535 2057</a></li>
+            <li>Web Oficial: <a href="https://lasantavid.com.mx" target="_blank" rel="noopener" class="underline hover:text-gold-light">lasantavid.com.mx</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 font-body-sm text-[11px] text-cantera-sand/50">
+        <p>© 2026 La Santa Vid • INOBA Desarrollos • Keller Williams México • Artigas Arquitectos. Todos los derechos reservados.</p>
+        <div class="flex items-center gap-6 font-label-sm text-[10px] uppercase tracking-widest">
+          <a href="https://lasantavid.com.mx/privacidad" target="_blank" rel="noopener" class="hover:text-gold-light">Aviso de Privacidad</a>
+          <a href="#contacto-vip" class="hover:text-gold-light">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       MOBILE ERGONOMIC BOTTOM BAR & DRAWER
+       ======================================================================== -->
+  <nav class="lg:hidden fixed bottom-0 inset-x-0 z-50 bg-cabernet-deep/95 backdrop-blur-xl border-t border-gold-burnished/30 flex justify-around items-center h-16 px-2 text-cantera-sand">
+    <a href="#inicio" class="flex flex-col items-center justify-center gap-0.5 text-gold-light">
+      <span class="material-symbols-outlined text-lg">home</span>
+      <span class="font-label-sm text-[8px] uppercase tracking-widest">Proyecto</span>
+    </a>
+    <a href="#enologia" class="flex flex-col items-center justify-center gap-0.5 text-cantera-sand/75 hover:text-gold-light">
+      <span class="material-symbols-outlined text-lg">wine_bar</span>
+      <span class="font-label-sm text-[8px] uppercase tracking-widest">Viñedos</span>
+    </a>
+    <a href="#residencias" class="flex flex-col items-center justify-center gap-0.5 text-cantera-sand/75 hover:text-gold-light">
+      <span class="material-symbols-outlined text-lg">villa</span>
+      <span class="font-label-sm text-[8px] uppercase tracking-widest">Casas</span>
+    </a>
+    <a href="#masterplan" class="flex flex-col items-center justify-center gap-0.5 text-cantera-sand/75 hover:text-gold-light">
+      <span class="material-symbols-outlined text-lg">map</span>
+      <span class="font-label-sm text-[8px] uppercase tracking-widest">Masterplan</span>
+    </a>
+    <a href="https://wa.me/525535352057" target="_blank" rel="noopener" class="flex flex-col items-center justify-center gap-0.5 text-gold-light font-bold">
+      <span class="material-symbols-outlined text-lg">chat</span>
+      <span class="font-label-sm text-[8px] uppercase tracking-widest">Concierge</span>
+    </a>
+  </nav>
+
+  <!-- Mobile Navigation Drawer -->
+  <aside id="mobile-drawer" class="hidden fixed inset-0 z-[80] bg-black/75 backdrop-blur-sm">
+    <div class="absolute inset-y-0 right-0 w-[85%] max-w-sm bg-cabernet-deep text-cantera-sand p-6 flex flex-col justify-between hairline-dark">
+      <div>
+        <div class="flex items-center justify-between pb-6 mb-6 border-b border-gold-burnished/25">
+          <span class="font-serif text-xl text-gold-light">LA SANTA VID</span>
+          <button type="button" onclick="document.getElementById('mobile-drawer').classList.add('hidden')" class="p-2 text-cantera-sand hover:text-gold-light">
+            <span class="material-symbols-outlined text-2xl">close</span>
+          </button>
+        </div>
+        <nav class="flex flex-col space-y-4 font-label-md text-xs uppercase tracking-[0.2em]">
+          <a href="#fullness" onclick="document.getElementById('mobile-drawer').classList.add('hidden')" class="py-2 border-b border-white/10 hover:text-gold-light">01 • Filosofía Fullness</a>
+          <a href="#enologia" onclick="document.getElementById('mobile-drawer').classList.add('hidden')" class="py-2 border-b border-white/10 hover:text-gold-light">02 • Centro Enológico &amp; Vino</a>
+          <a href="#cinema" onclick="document.getElementById('mobile-drawer').classList.add('hidden')" class="py-2 border-b border-white/10 hover:text-gold-light">03 • Cinema &amp; Videos</a>
+          <a href="#residencias" onclick="document.getElementById('mobile-drawer').classList.add('hidden')" class="py-2 border-b border-white/10 hover:text-gold-light">04 • Residencias Artigas (8)</a>
+          <a href="#inversion" onclick="document.getElementById('mobile-drawer').classList.add('hidden')" class="py-2 border-b border-white/10 hover:text-gold-light">05 • Simulador &amp; Fractional</a>
+          <a href="#lifestyle" onclick="document.getElementById('mobile-drawer').classList.add('hidden')" class="py-2 border-b border-white/10 hover:text-gold-light">06 • Lifestyle &amp; Wyndham</a>
+          <a href="#masterplan" onclick="document.getElementById('mobile-drawer').classList.add('hidden')" class="py-2 border-b border-white/10 text-gold-light font-bold">07 • Masterplan En Tiempo Real</a>
+          <a href="#contacto-vip" onclick="document.getElementById('mobile-drawer').classList.add('hidden')" class="py-2 hover:text-gold-light">08 • Agendar Visita Privada</a>
+        </nav>
+      </div>
+      <a href="https://wa.me/525535352057" target="_blank" rel="noopener" class="w-full py-4 bg-gold-burnished text-cabernet-deep text-center font-label-sm text-xs uppercase tracking-widest font-bold">
+        WhatsApp Concierge VIP
+      </a>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       MODAL 1: ARCHITECTURAL DOSSIER & MULTI-PHOTO GALLERY LIGHTBOX
+       ======================================================================== -->
+  <div id="residence-modal" class="hidden fixed inset-0 z-[90] bg-black/85 backdrop-blur-md flex items-center justify-center p-4 lg:p-8 overflow-y-auto">
+    <div class="bg-cabernet-deep text-cantera-sand max-w-6xl w-full hairline-dark cellar-shadow overflow-hidden my-auto">
+      <div class="px-6 py-4 bg-black/50 border-b border-gold-burnished/25 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <span id="rm-badge" class="px-2.5 py-1 bg-gold-burnished text-cabernet-deep font-label-sm text-[9px] uppercase tracking-widest font-bold">Prototipo</span>
+          <span id="rm-vinedo" class="font-label-sm text-[10px] uppercase tracking-widest text-gold-light">Artigas Arquitectos</span>
+        </div>
+        <button type="button" onclick="window.closeResidenceModal()" class="p-1.5 text-cantera-sand hover:text-gold-light transition-colors">
+          <span class="material-symbols-outlined text-2xl">close</span>
+        </button>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12">
+        <!-- Left Gallery Viewer -->
+        <div class="lg:col-span-7 bg-black relative flex flex-col justify-between">
+          <div class="relative aspect-[16/10] w-full overflow-hidden bg-black flex items-center justify-center">
+            <img id="rm-main-img" src="" alt="Residencia La Santa Vid" class="w-full h-full object-cover" />
+            <button type="button" onclick="window.stepResidencePhoto(-1)" class="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/65 hover:bg-gold-burnished text-cantera-sand hover:text-cabernet-deep flex items-center justify-center transition-colors">
+              <span class="material-symbols-outlined">chevron_left</span>
+            </button>
+            <button type="button" onclick="window.stepResidencePhoto(1)" class="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/65 hover:bg-gold-burnished text-cantera-sand hover:text-cabernet-deep flex items-center justify-center transition-colors">
+              <span class="material-symbols-outlined">chevron_right</span>
+            </button>
+            <div id="rm-photo-caption" class="absolute bottom-0 inset-x-0 p-3 bg-gradient-to-t from-black/90 to-transparent font-label-sm text-[10px] uppercase tracking-widest text-gold-light text-center"></div>
+          </div>
+          <div id="rm-thumbs" class="p-3 bg-black/90 border-t border-white/10 flex items-center gap-2 overflow-x-auto"></div>
+        </div>
+
+        <!-- Right Specs & Inquiry -->
+        <div class="lg:col-span-5 p-6 lg:p-8 flex flex-col justify-between space-y-6">
+          <div class="space-y-4">
+            <h3 id="rm-name" class="font-serif text-3xl text-cantera-sand">Casa Plenitud</h3>
+            <p id="rm-price" class="font-label-md text-xs uppercase tracking-widest text-gold-light font-bold"></p>
+
+            <div class="grid grid-cols-2 gap-3 py-4 border-y border-gold-burnished/25">
+              <div>
+                <span class="font-label-sm text-[9px] uppercase tracking-widest text-cantera-sand/60 block">Construcción</span>
+                <span id="rm-m2c" class="font-serif text-lg text-cantera-sand">540 m²</span>
+              </div>
+              <div>
+                <span class="font-label-sm text-[9px] uppercase tracking-widest text-cantera-sand/60 block">Superficie Lote</span>
+                <span id="rm-m2t" class="font-serif text-lg text-cantera-sand">1,008 m²</span>
+              </div>
+              <div>
+                <span class="font-label-sm text-[9px] uppercase tracking-widest text-cantera-sand/60 block">Distribución</span>
+                <span id="rm-beds" class="font-serif text-lg text-cantera-sand">5 Recámaras</span>
+              </div>
+              <div>
+                <span class="font-label-sm text-[9px] uppercase tracking-widest text-cantera-sand/60 block">Niveles</span>
+                <span id="rm-levels" class="font-serif text-lg text-cantera-sand">2 Plantas + Cava</span>
+              </div>
+            </div>
+
+            <p id="rm-desc" class="font-body-sm text-xs text-cantera-sand/85 leading-relaxed"></p>
+          </div>
+
+          <div class="space-y-3">
+            <a id="rm-wa-btn" href="https://wa.me/525535352057" target="_blank" rel="noopener" class="w-full py-4 bg-gold-burnished hover:bg-gold-light text-cabernet-deep font-label-sm text-xs uppercase tracking-[0.2em] font-bold transition-all flex items-center justify-center gap-2">
+              <span class="material-symbols-outlined text-base">chat</span>
+              <span>Solicitar Planos y Dossier en WhatsApp</span>
+            </a>
+            <button type="button" onclick="window.closeResidenceModal(); document.getElementById('contacto-vip').scrollIntoView({behavior:'smooth'});" class="w-full py-3 bg-white/10 hover:bg-white/20 text-cantera-sand font-label-sm text-[10px] uppercase tracking-[0.2em] transition-all">
+              Agendar Recorrido Presencial
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL 2: VIDEO CINEMA THEATER LIGHTBOX
+       ======================================================================== -->
+  <div id="video-modal" class="hidden fixed inset-0 z-[95] bg-black/90 backdrop-blur-lg flex items-center justify-center p-4 lg:p-10">
+    <div class="max-w-5xl w-full bg-slate-charcoal hairline-dark overflow-hidden cellar-shadow">
+      <div class="px-6 py-4 bg-cabernet-deep border-b border-gold-burnished/25 flex items-center justify-between">
+        <div class="flex items-center gap-2.5">
+          <span class="material-symbols-outlined text-gold-light">movie</span>
+          <span id="video-modal-title" class="font-label-sm text-[11px] uppercase tracking-[0.2em] text-cantera-sand font-semibold">La Santa Vid — Film Oficial</span>
+        </div>
+        <button type="button" onclick="window.closeVideoModal()" class="p-1 text-cantera-sand hover:text-gold-light transition-colors">
+          <span class="material-symbols-outlined text-2xl">close</span>
+        </button>
+      </div>
+      <div id="video-modal-container" class="aspect-video w-full bg-black"></div>
+    </div>
+  </div>
+
+  <!-- Live Masterplan Snapshot Fallback + Interactive Engine -->
+  <script src="assets/lotes-fallback.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
